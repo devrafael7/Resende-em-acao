@@ -1,0 +1,88 @@
+/* Importa as fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reseta margens, paddings e define a fonte padrão */
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Centraliza o conteúdo no body */
+body {
+    background: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Área do logo centralizada vertical e horizontalmente */
+.logoArticle {
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Define tamanho do logo */
+.logoArticle .logo {
+    width: 5.8rem;
+    height: auto;
+}
+
+/* Container "Bem-vindo" com cantos arredondados e fundo azul */
+.divBemVindo {
+    height: 55vh;
+    border-top-left-radius: 3.1rem;
+    border-top-right-radius: 3.1rem;
+    background: #6ec5da;
+    display: flex;
+    flex-direction: column;
+    padding: 4.8rem 2.4rem 0; /* Inclui espaçamento interno */
+}
+
+/* Espaçamento entre título, texto e botões */
+.divBemVindo .bemVindoTitle {
+    margin-bottom: 1rem;
+}
+
+.divBemVindo .bemVindoTexto {
+    margin-bottom: 3rem;
+    line-height: 1.2; /* Ajusta o espaçamento entre linhas */
+}
+
+/* Botões estilizados com sombra e bordas arredondadas */
+.divBemVindo .bemVindoButtons {
+    display: flex;
+    gap: 1rem; /* Espaço entre os botões */
+}
+
+.divBemVindo .bemVindoButtons button {
+    border-radius: 2.5rem;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.062) 0px 3px 6px, rgba(0, 0, 0, 0.034) 0px 3px 6px;
+}
+
+/* Botão preto com texto branco */
+.divBemVindo .bemVindoButtons .bemVindoButton {
+    background: black;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.6rem 1.9rem;
+}
+
+/* Botão branco com texto preto */
+.divBemVindo .bemVindoButtons .bemVindoButton2 {
+    background: #fff;
+    color: #000;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.6rem 1.7rem;
+}
+
+
+
