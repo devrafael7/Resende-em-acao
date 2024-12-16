@@ -7,7 +7,7 @@
     padding: 0;
 
 }
-
+/* Div principal que define a imagem de fundo para a seção inicial. */
 .divfrontimg{
     background-image: url(/frontend/images/altosurubi1.jpg);
     background-repeat: no-repeat;
@@ -15,12 +15,14 @@
     height: auto;
     width: 100%;
 }
+/* Sobreposição escura semitransparente sobre a imagem de fundo. */
 .divbackimg{
     background-color: rgba(0, 0, 0, 0.747);
     height: auto;
     width: 100%;
 
 }
+/* Menu de navegação principal com itens centralizados horizontalmente. */
 .menu{
     width: 100%;
     color: white;
@@ -30,6 +32,7 @@
     align-items: center;
 
 }
+/* Estilo de cada item do menu, com espaçamento e tamanho da fonte. */
 .itemMenu{
     margin: 15px 30px 15px 30px;
     cursor: pointer;
@@ -37,10 +40,12 @@
     list-style-type: none;
 
 }
+/* Remove o estilo padrão dos links e define o cursor como clicável. */
 a{
     all: unset;
     cursor: pointer;
 }
+/* Cabeçalho fixo no topo da página com fundo transparente. */
 .header1{
     display: flex;
     width: 100%;
@@ -51,6 +56,7 @@ a{
     
 
 }
+/* Títulos grandes com alinhamento e espaçamento para destaque. */
 .tit{
     padding-left: 70px;
     padding-top: 200px;
@@ -60,6 +66,7 @@ a{
     position: relative;
     align-items: center;
 }
+/* Estilo para textos explicativos com espaçamento e largura definidos. */
 .txt{
     font-size: 17px;
     padding-top: 40px;
@@ -67,6 +74,7 @@ a{
     color: white;
     width: 40%;
 }
+/* Botão estilizado com bordas arredondadas e cores para o estado padrão. */
 .button1{
     background-color: #007bff;
     color: white;
@@ -83,6 +91,7 @@ a{
 .button1:hover{
     background-color: #0056b3;
 }
+/* Estilo do botão ao passar o mouse, com alteração da cor de fundo. */
 .PQDOAR{
     padding-bottom: 200px;
     width: 100%;
@@ -90,9 +99,11 @@ a{
     background-color: #000E17;
 
 }
+/* Seção "Por que doar?" com fundo escuro e espaçamento inferior. */
 .sectionCards{
     display: flex;
 }
+/* Contêiner que organiza os cartões lado a lado. */
 .card{
     color: white;
     border-radius: 20px;
@@ -102,31 +113,37 @@ a{
     height: 350px;
     width: 350px;
 }
+/* Estilo do título dentro de cada cartão, com margens definidas. */
 .titCard{
     margin: 15px;
 
 }
+/* Estilo do texto dentro de cada cartão, com margens definidas. */
 .txtCard{
     margin: 15px;
 
 }
+/* Seção "Onde doar?" com alinhamento centralizado e fundo escuro. */
 .divOndeDoar{
     background-color: #000E17;
     text-align: center;
     width: 100%;
     height: auto;
 }
+/* Estilo do texto explicativo na seção "Onde doar?". */
 .h1OndeDoar{
     color: white;
     padding-top: 200px;
     font-size: 80px;
 
 }
+/* Estilo do texto explicativo na seção "Onde doar?". */
 .txtOndeDoar{
     color: white;
     padding: 90px;
     font-size: 20px;
 }
+/* Div com imagem de fundo para a seção de instituições. */
 .divImageBackInstituicao{
     width: 100%;
     height: 700px;
@@ -135,18 +152,21 @@ a{
     background-size: cover;
 
 }
+/* Sobreposição escura semitransparente na seção de instituições. */
 .divBackOpacidade{
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.562);
     
 }
+/* Estilo do título da seção "Instituição", com tamanho médio e espaçamento. */
 .titleInstituicao{
     color: white;
     font-size: 50px;
     padding-top: 120px;
     padding-left: 140px;
 }
+/* Estilo do texto explicativo na seção "Instituição". */
 .txtInstituicao{
     color: white;
     padding-top: 50px;
@@ -155,6 +175,7 @@ a{
 
 
 }
+/* Botão estilizado na seção "Instituição", com bordas arredondadas. */
 .buttonInstituicao{
     background-color: #ffffff;
     border: none;
