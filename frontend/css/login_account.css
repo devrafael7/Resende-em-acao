@@ -1,0 +1,159 @@
+/* Importa as fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reseta margens, paddings e define a fonte padrão */
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+
+
+.bolaGrandeDireita {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 20rem;
+    background: #6ec5da;
+    position: absolute;
+    right: -20%;
+    top: -15%;
+    z-index: 1;
+    display: flex;
+}
+
+.bolaMediaEsquerda {
+    width: 11em;
+    height: 11rem;
+    border-radius: 20rem;
+    background: #5699aada;
+    position: absolute;
+    right: 40%;
+    top: -10%;
+}
+
+.container {
+    padding-top: 15rem;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container .loginAndCadastroButton {
+    width: 63%;
+    height: 3.4rem;
+    border-radius: 20rem;
+    background: #6ec5da;
+    padding: 0.150rem;
+    
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+.container .loginAndCadastroButton .loginButton {
+    width: 65%;
+    height: 100%;
+    background: white;
+    border-radius: 5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+.container .loginAndCadastroButton .cadastroButton {
+    width: 35%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    color: white;
+}
+
+.container .formularioLogin {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.container .formularioLogin .divFormularioLogin {
+    width: 80%;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+    border-bottom: 1px solid black;
+    gap: 0.6rem;
+}
+
+.container .formularioLogin .divFormularioLogin .passwordIcon {
+    width: 8%;
+    height: auto;
+    margin-bottom: 0.4rem;
+}
+
+.container .formularioLogin input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    font-size: 1.4rem;
+}
+
+.container .formularioLogin .divFormularioButton {
+    width: 75%;
+    background: #6ec5da;
+    height: auto;
+    padding: 0.9rem 0rem;
+    border-radius: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 1.2rem;
+}
+
+.bolaPequenaEsquerda {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 20rem;
+    background: #5699aada;
+    position: absolute;
+    left: -7%;
+    bottom: -26%;
+    z-index: 1;
+    display: flex;
+}
+
+.bolaPequenaDireita {
+    width: 3.3rem;
+    height: 3.3rem;
+    border-radius: 20rem;
+    background: #6ec5da;
+    position: absolute;
+    left: 16%;
+    bottom: -8%;
+    z-index: 1;
+    display: flex;
+}
