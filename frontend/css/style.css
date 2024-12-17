@@ -53,6 +53,7 @@ a{
     position: fixed;
     height: 70px;
     background-color: rgba(255, 255, 255, 0.11);
+    backdrop-filter: blur(5px);
     
 
 }
@@ -110,7 +111,7 @@ a{
     margin-top: 130px;
     margin-left: 30px;
     background-color: #212D34;
-    height: 350px;
+    height: auto;
     width: 350px;
 }
 /* Estilo do título dentro de cada cartão, com margens definidas. */
@@ -186,3 +187,145 @@ a{
     margin-left: 130px;
 
 }
+/* Ajustando responsividade para mobile*/
+@media  (max-width: 768px) {
+
+    .header1{
+        margin-top: 0;
+        padding-top: 0;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        position: fixed;
+        height: 50px;
+        background-color: rgba(0, 0, 0, 0.329);
+        backdrop-filter: blur(5px);
+        
+
+    }
+
+    .itemMenu{
+        margin: 5px 10px 10px 5px;
+        cursor: pointer;
+        font-size: 12px;
+        list-style-type: none;
+    }
+
+    .tit{
+        padding-left: 30px;
+        padding-top: 150px;
+        color: white;
+        font-size: 40px;
+        display: flex;
+        position: relative;
+        align-items: center;
+    }
+
+    .txt{
+        font-size: 13px;
+        padding-top: 40px;
+        padding-left: 40px;
+        color: white;
+        width: 60%;
+    }
+
+    .button1{
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 50px;
+        padding: 15px 30px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-left: 40px;
+        margin-top: 80px;
+        margin-bottom: 320px; 
+    }
+
+    .card{
+        
+        color: white;
+        border-radius: 20px;
+        margin-top: 30px;
+        margin-left: 10px;
+        margin-right: 25px;
+        background-color: #212D34;
+        height: auto;
+        width: 350px;
+    }
+
+    .sectionCards{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+    }
+
+    .h1OndeDoar{
+        color: white;
+        padding-top: 200px;
+        font-size: 50px;
+    
+    }
+
+    .txtOndeDoar{
+        color: white;
+        padding: 90px;
+        font-size: 17px;
+    }
+
+    .titleInstituicao{
+        color: white;
+        font-size: 40px;
+        padding-top: 120px;
+        padding-left: 40px;
+    }
+
+    .txtInstituicao{
+        color: white;
+        padding-top: 50px;
+        padding-left: 40px;
+        width: 60%;
+        font-size: 15px;
+    
+    
+    }
+
+    .buttonInstituicao{
+        background-color: #ffffff;
+        border: none;
+        border-radius: 50px;
+        padding: 15px 50px;
+        cursor: pointer;
+        margin-top: 50px;
+        margin-left: 40px;
+    }
+ 
+}
+/* Ajustando responsividade para tablet */
+@media  (max-width: 1024px){
+
+    .sectionCards{
+        flex-wrap: wrap;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card{
+        
+        color: white;
+        border-radius: 20px;
+        margin-top: 50px;
+        margin-left: 30px;
+        background-color: #212D34;
+        height: auto;
+        width: 600px;
+    }
+
+    .txtCard{
+        font-size: 15px;
+
+    }
+
+}
+    
