@@ -9,7 +9,7 @@
 }
 /* Div principal que define a imagem de fundo para a seção inicial. */
 .divfrontimg{
-    background-image: url(../images/altosurubi1.jpg);
+    background-image: url(css/images/altosurubi1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: auto;
