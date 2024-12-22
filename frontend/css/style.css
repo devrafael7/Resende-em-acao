@@ -7,6 +7,8 @@
     padding: 0;
 
 }
+
+
 /* Div principal que define a imagem de fundo para a seção inicial. */
 .divfrontimg{
     background-image: url(../images/altosurubi1.jpg);
@@ -464,4 +466,89 @@ a{
     }
 
 } 
+
+/* Criação do Pop-up de Login opcional no index 
+
+            EM DESENVOLVIMENTO (PERMANECER COMENTADO), não afetará nada no código.
+
+
+.popUpFazerLogin {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    background: #000000c2;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
     
+.popUpFazerLogin .popUpFazerLoginFilho{
+    width: 50%;
+    height: 20%;
+    border-radius: 1rem;
+    position: relative;
+    color: #fff;
+    border: 1px solid white;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.popUpFazerLogin .popUpFazerLoginFilho h1{
+    margin-bottom: 0.2rem;
+    font-weight: 500;
+}
+
+.popUpFazerLogin .popUpFazerLoginFilho .loginButtonAndIcons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: auto;
+}
+
+
+.popUpFazerLogin .popUpFazerLoginFilho .loginButtonAndIcons .fazerLoginButton{
+    width: 20%;
+    height: auto;
+    padding: 0.7rem 1rem;
+    border-radius: 0.2rem;
+    color: #ffffff;
+    border: 1px solid white;
+    text-align: center;
+    margin-right: 1rem;
+}
+
+.popUpFazerLogin .popUpFazerLoginFilho .loginButtonAndIcons a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ 
+
+.popUpFazerLogin .popUpFazerLoginFilho .loginButtonAndIcons img{
+    width: 2.2rem;
+    height: auto;
+    margin-right: 0.4rem;
+}
+ 
+.popUpFazerLogin .popUpFazerLoginFilho .fecharPopUp{
+    position: absolute;
+    right: 1%;
+    top: 2%;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.popUpFazerLogin .popUpFazerLoginFilho img{
+    cursor: pointer;
+}
+
+.popUpFazerLogin .popUpFazerLoginFilho span{
+    cursor: pointer;
+}
+
+*/

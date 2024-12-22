@@ -45,4 +45,3 @@ loginForm.forEach( loginForms => {
     })
 })
 
-
