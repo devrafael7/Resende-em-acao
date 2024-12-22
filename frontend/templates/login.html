@@ -9,13 +9,12 @@
 </head>
 
 <body>
-
     <div class="container" id="container">
 
         <div class="form-container sign-up">
             
 
-            <form>
+            <form class="loginForm signUpForm" action="/index.html">
                 <div class="circuloLaranja">
                     <div class="circuloLaranjaPequeno">
 
@@ -30,17 +29,17 @@
                 <span>ou use seu e-mail para se registrar</span>
                 <div class="inputDiv">
                     <img src="../icons/icons8-usuário-30 (1).png" alt="">
-                    <input type="text" placeholder="Name">
+                    <input required type="text" placeholder="Name">
                 </div>
 
                 <div class="inputDiv">
                     <img src="../icons/icons8-gmail-logo-50.png" alt="">
-                    <input type="email" placeholder="Email">
+                    <input required type="email" placeholder="Email">
                 </div>
 
                 <div class="inputDiv">
                     <img src="../icons/icons8-trancar-50.png" alt="">
-                    <input type="password" placeholder="Password">
+                    <input required type="password" placeholder="Password">
                 </div>
 
                 <div class="alreadyHaveAccountDiv">Já possui uma conta? Entrar </div>
@@ -61,7 +60,7 @@
         </div>
         <div class="form-container sign-in">
         
-            <form>
+            <form class="loginForm signInForm" action="/index.html">
 
                 <div class="circuloLaranja">
                     <div class="circuloLaranjaPequeno">
@@ -78,17 +77,17 @@
 
                 <div class="inputDiv">
                     <img src="../icons/icons8-gmail-logo-50.png" alt="">
-                    <input type="email" placeholder="Email">
+                    <input required type="email" placeholder="Email">
                 </div>
 
                 <div class="inputDiv">
                     <img src="../icons/icons8-trancar-50.png" alt="">
-                    <input type="password" placeholder="Password">
+                    <input required type="password" placeholder="Password">
                 </div>
 
                 <div class="dontHaveAccountDiv">Não possui uma conta? Criar conta</div>
                 
-                <button>Entrar</button>
+                <button type="submit">Entrar</button>
 
                 <!--
                 <div class="smFormButton">
@@ -116,6 +115,14 @@
                     <button class="hidden" id="register">Cadastrar</button>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="wholeLoadingDiv">
+        <div class="loading ">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
         </div>
     </div>
 
