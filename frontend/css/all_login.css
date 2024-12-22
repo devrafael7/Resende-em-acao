@@ -276,7 +276,16 @@ body{
     transform: translateX(200%);
 }
 
-@media (max-width: 768px) {
+.container .form-container form .dontHaveAccountDiv {
+    display: none;
+}
+
+
+.container .form-container form .alreadyHaveAccountDiv {
+    display: none;
+}
+
+@media (max-width: 821px) {
     .toggle-container {
         display: none;
     }
@@ -342,42 +351,25 @@ body{
         font-size: 1rem;
     }
 
-    .container .smFormButton {
+    .container .form-container form .dontHaveAccountDiv {
         display: block;
-        width: 80%;
-        height: 2.8rem;
-        border-radius: 20rem;
-        background: white;
-        margin-top: 1rem;
-        display: flex;
-        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        cursor: pointer;
+        font-size: 0.9rem;
+        margin: 0.5rem 0rem;
     }
 
-    .container .smFormButton .smFormButtonLeft {
-        width: 62%;
-        height: 100%;
-        background: #f7835a;
-        color: white;
-        border-radius: 20rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    .container .form-container form .alreadyHaveAccountDiv {
+        display: block;
+        cursor: pointer;
+        font-size: 0.9rem;
+        margin: 0.5rem 0rem;
     }
 
-    .container .smFormButton .smFormButtonRight {
-        width: 38%;
-        height: 100%;
-        background: white;
-        color: black;
-        border-radius: 20rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    .container button{
+        padding: 14px 60px;
+        font-size: 0.8rem;
     }
 
-    .container button {
-        display: none;
-    }
     
     .sign-up{
         left: 0;
@@ -414,6 +406,16 @@ body{
         height: 100%;
         justify-content: center;
         align-items: center;
-
     }
 }
+
+@media (min-width: 768px) and (max-width: 821px) {
+    html {
+        font-size: 1.6rem;
+    }
+}
+
+.hiddenItem {
+    display: none;
+}
+
