@@ -5,10 +5,12 @@
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
+    
 
 }
-
-
+body{
+    background:linear-gradient(#f7835a, #f9f9f9, #f9f9f9);
+}
 /* Div principal que define a imagem de fundo para a seção inicial. */
 .divfrontimg{
     background-image: url(../images/altosurubi1.jpg);
@@ -45,7 +47,7 @@
 }
 /* aumenta o tamanho e troca a cor ao passar o cursor */
 .itemMenu:hover{
-    color: #007bff;
+    color: #f7835a;
     transform: scale(1.2);
 }
 /* Remove o estilo padrão dos links e define o cursor como clicável. */
@@ -60,7 +62,7 @@ a{
     justify-content: center;
     position: fixed;
     height: 50px;
-    background-color: #007bff10;
+    background-color: #f7845a14;
     backdrop-filter: blur(5px);
     
 
@@ -85,7 +87,7 @@ a{
 }
 /* Botão estilizado com bordas arredondadas e cores para o estado padrão. */
 .button1{
-    background-color: #007bff;
+    background-color: #f7835a;
     color: white;
     border: none;
     border-radius: 50px;
@@ -101,14 +103,102 @@ a{
 /* aumenta o tamanho e troca a cor ao passar o cursor */
 .button1:hover{
     transform: scale(1.2);
-    background-color: #0056b3;
+    background-color: #f08b2c;
 }
+
+
+
+
+
+.divBackimgMotiv{
+    width: 100%;
+    height: 500px;
+    background-image: url(../images/imgsitrua.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.titMotiv{
+    font-size: 40px;
+    color: #f7835a;
+    padding-top: 8rem;
+
+}
+.txtMotiv{
+    padding-top: 2rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    font-size: 20px;
+    color: white;
+
+}
+.buttonQueroAjudar{
+    padding: 15px;
+    border-radius: 20px;
+    margin-top: 5rem;
+    background-color: #f7835a;
+    transition: 0.5s ease;
+    cursor: pointer;
+    
+
+}
+.buttonQueroAjudar:hover{
+    background-color: #f08b2c;
+    transform: scale(1.2);
+}
+
+.articleDadosBrasil{
+    width: 100%;
+    height: 400px;
+    background:linear-gradient(black,black,#222222);
+    
+
+}
+.divBackDadosBrasil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.divDadosBrasil{ 
+    width: 470px;
+    height: 512px;
+    background-image: url(../icons/map.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 20px;
+    text-align: center;
+    margin-left: -40px;
+    transition: 1s ease;
+
+}
+.divDadosBrasil:hover{
+    transform: translateY(-10%);
+}
+
+.titDadosBrasil{
+    color: white;
+    font-size: 40px;
+    padding-top: 7rem;
+
+
+}
+.txtDadosBrasil{
+    color: white;
+    font-size: 20px;
+    width: 200px;
+    padding-left: 11rem;
+    
+
+}
+
+
 /* Estilo do botão ao passar o mouse, com alteração da cor de fundo. */
 .PQDOAR{
     padding-bottom: 200px;
     width: 100%;
     height: auto;
-    background-color: #000E17;
+    background:linear-gradient(#222222,#f7835a, #000E17);
 
 }
 /* Seção "Por que doar?" com fundo escuro e espaçamento inferior. */
@@ -117,7 +207,7 @@ a{
 }
 /* Contêiner que organiza os cartões lado a lado. */
 .card{
-    color: white;
+    color: #ffffff;
     border-radius: 20px;
     margin-top: 130px;
     margin-left: 30px;
@@ -144,6 +234,13 @@ a{
     margin: 15px;
 
 }
+
+.divLinhasobOndeDoar{
+    box-shadow: 0px 0px 110px 20px black;
+    background-color: black;
+    width: 100%;
+    height: 2px;
+}
 /* Seção "Onde doar?" com alinhamento centralizado e fundo escuro. */
 .divOndeDoar{
     background-color: #000E17;
@@ -153,24 +250,123 @@ a{
 }
 /* Estilo do texto explicativo na seção "Onde doar?". */
 .h1OndeDoar{
-    color: white;
+    color: #f7835a;
     padding-top: 200px;
     font-size: 80px;
 
 }
 /* Estilo do texto explicativo na seção "Onde doar?". */
 .txtOndeDoar{
-    color: white;
+    color: #ffffff;
     padding: 90px;
     font-size: 20px;
 }
+
+.articleOqueDoar{
+    background-color: #000E17;
+}
+
+.DivsubTitOqueDoar{
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+
+}
+.TitOqueDoar{
+    color: white;
+    font-size: 40px;
+    padding-top: 50px;
+
+}
+.txtOqueDoar{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 80px;
+    padding-right:80px;
+
+}
+
+
+
+.sectionOqDoar{
+    width: 100%;
+    height: auto;
+    background: linear-gradient(#000E17);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.divOptionOQdoar{
+    margin: 15px;
+    background-color: transparent;
+    height: auto;
+    width: 200px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+}
+.imgOqueDoar{
+    padding-left: 65px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s ease;
+    
+}
+
+.subtitOptionOqDoar{
+    font-size: 15px;
+    color: white;
+    transition: 0.5s ease;
+
+}
+.subtitOptionOqDoar:hover{
+   color: #f7835a;
+    transform: scale(1.2);
+
+}
+.txtOptionOqDoar{
+    color: white;
+    padding-top: 20px;
+    font-size: 13px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.divcolorBackInstituicao{
+    background: linear-gradient(#000E17,#f7835a);
+    width: 100%;
+    height: auto;
+}
 /* Div com imagem de fundo para a seção de instituições. */
 .divImageBackInstituicao{
-    width: 100%;
+    width: 95%;
     height: 700px;
     background-image: url(../images/altosurubi1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    margin-left: 40px;
+    border-radius: 40px;
 
 }
 /* Sobreposição escura semitransparente na seção de instituições. */
@@ -178,6 +374,8 @@ a{
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.562);
+    border-radius: 40px;
+    
     
 }
 /* Estilo do título da seção "Instituição", com tamanho médio e espaçamento. */
@@ -214,15 +412,16 @@ a{
 
 /* Estilo para a seção de integrantes */
 .sectionIntegrantes{
-    background-color: #000E17;
+    background: linear-gradient(#f7835a,#f9f9f9, #f08b2c);
     width: 100%;
     height: auto;
     text-align: center;
+    padding-bottom: 50px;
 }
 /* Estilo para o título dentro da seção de integrantes */
 .h2Integrantes{
     padding-top: 100px;
-    color: white;
+    color: #ffffff;
     font-size: 40px;
 }
 /* Contêiner para os artigos dos integrantes */
@@ -233,7 +432,7 @@ a{
 /* Estilo para cada cartão individual de integrante */
 .divIntegrante{
     display: flex;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: #000e17bf;
     border-radius: 20px;
     margin-top: 12rem;
     margin-left: 20px;
@@ -242,7 +441,8 @@ a{
     height: 300px;
     justify-content: center;
     box-sizing: border-box;
-    box-shadow: 1px 1px 20px 1px black;
+    box-shadow: 1px 1px 20px 1px #000E17;
+    
     
 }
 /* Estilo para a imagem do integrante */
@@ -269,16 +469,22 @@ a{
     align-items: center;
     justify-content: center;
     margin-top: 80px;
+    
+    
 }
 /* Estilo para o nome do integrante */
 .NomeIntegrante{
     padding-top: 30px;
-    color: white;
+    color: #f9f9f9;
     font-size: 25px;
+    transition: 1s;
+}
+.NomeIntegrante:hover{
+    transform: scale(1.2);
 }
 /* Estilo para o texto descritivo do integrante */
 .txtIntegrante{
-    color: white;
+    color: #f7835a;
     margin: 5px;
     font-size: 15px;
 }
@@ -290,6 +496,7 @@ a{
     align-items: center;
     justify-content: center;
     
+    
 }
 /* Estilo para os ícones dos integrantes */
 .iconsIntegrantes{
@@ -297,7 +504,142 @@ a{
     width: 30px;
     height: 30px;
     opacity: 0.8;
+    transition: 0.5s ease;
 }
+.iconsIntegrantes:hover{
+    transform: scale(1.2);
+
+}
+
+
+
+
+
+
+
+.divLinhasobFooter{
+    background-color: rgba(255, 255, 255, 0.279);
+    width: 90%;
+    margin-top: 7rem;
+    height: 2px;
+    box-shadow: 5px 1px 5px 1px rgba(255, 255, 255, 0.4);
+    margin-left: 5rem;
+    
+}
+.AbaFooter{
+    padding-top: 2rem;
+    display: flex;
+    background: linear-gradient(#f08b2c,#f7835a);
+    width: 100%;
+    height: auto;
+    color: rgba(255, 255, 255, 0.667);
+}
+
+
+.divfooterMenu{
+    border: 1px solid rgba(255, 255, 255, 0);
+    width: 300px;
+    padding-left: 40px;
+    
+}
+
+.h5Footer{
+    padding: 50px 50px 30px 50px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.h5Footer:hover{
+    color: white;
+}
+
+.footerUL{
+    list-style-type: none;
+    display: grid;
+    padding: 50px 50px 50px 50px;
+}
+
+.itemFooterMenu{
+    margin-top: 15px;
+    transition: 0.5s ease;
+    
+}
+.itemFooterMenu:hover{
+    color: white;
+}
+
+.divfooterContatosIntegrantes{
+    width: 300px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    
+
+}
+
+.footerULIntegrantes{
+    list-style-type: none;
+    display: grid;
+    padding: 30px 50px 50px 50px;
+
+}
+.itemFooterIntegrantes{
+    margin-top: 15px;
+    padding-top: 20px;
+    transition: 0.5s ease;
+
+}
+.itemFooterIntegrantes:hover{
+    color: white;
+}
+
+.divfooterMapaSite{
+    border: 1px solid rgba(255, 255, 255, 0);
+    width: 300px;
+    
+}
+.h5Mapasite{
+    padding: 50px 50px 50px 50px;
+    transition: 0.5s ease;
+
+}
+.h5Mapasite:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.footerULMapaSite{
+    list-style-type: none;
+    display: grid;
+    padding: 30px 50px 50px 50px;
+
+}
+.itemFooterMapaSite{
+    margin-top: 15px;
+    transition: 0.5s ease;
+
+}
+.itemFooterMapaSite:hover{
+    color: white;
+}
+
+.divfooterDesfechoProjeto{
+    border: 1px solid rgba(255, 255, 255, 0);
+    width: 35%;
+}
+.h5DesfechoProjeto{
+    padding: 50px 50px 50px 50px;
+}
+.txtDesfecho{
+    padding-left: 50px;
+}
+.Fdireitosreservados{
+    background-color: #f7835a;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    padding-top: 12px;
+    color: white;
+}
+
+
 
 /* Ajustando responsividade para mobile*/
 @media  (max-width: 768px) {
