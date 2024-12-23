@@ -424,6 +424,40 @@ a{
     transform: scale(1.2);
 }
 
+.divCompartilhamento{
+    display: flex;
+    background-image: url(../images/Design\ sem\ nome\ \(2\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    
+    
+    
+
+}
+
+.h1compartilhamento{
+    font-size: 50px;
+    text-align: center;
+}
+
+.diviimgetitcompartilhamento{
+    position: absolute;
+    left: 0;
+    padding-left: 30rem;
+    display: grid;
+    width: 500px;
+    height: 200px;
+    color: white;
+
+
+}
+
+ 
 /* Estilo para a seção de integrantes */
 .sectionIntegrantes{
     background: linear-gradient(#f7835a,#f9f9f9, #f08b2c);
@@ -658,6 +692,12 @@ a{
 
 /* Ajustando responsividade para mobile*/
 @media  (max-width: 768px) {
+    
+    .buttonDoeAgoraHeader{
+        all: unset;
+        font-size: 0;
+    }
+    
 
     .header1{
         margin-top: 0;
@@ -710,6 +750,12 @@ a{
         margin-left: 40px;
         margin-top: 80px;
         margin-bottom: 320px; 
+        transform: scale(0.8);
+        
+    }
+    .button1:hover{
+        transform: scale(0.9);
+
     }
 
     .card{
@@ -849,8 +895,8 @@ a{
     }
     .divDadosBrasil{ 
         text-align: center;
-        width: 280px;
-        height: 280px;
+        width: 300px;
+        height: 300px;
         padding: 0;
         margin: 0;
       
