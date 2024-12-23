@@ -55,6 +55,24 @@ a{
     all: unset;
     cursor: pointer;
 }
+.buttonDoeAgoraHeader{
+    border-radius: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 7px;
+    margin-right: 25px;
+    padding: 8px;
+    background-color: #f7835a;
+    color: white;
+    border: none;
+    font-size: 15px;
+}
+.buttonDoeAgoraHeader:hover{
+    background-color: #f08b2c;
+    transform: scale(1.1);
+
+}
 /* Cabeçalho fixo no topo da página com fundo transparente. */
 .header1{
     display: flex;
@@ -139,6 +157,7 @@ a{
     background-color: #f7835a;
     transition: 0.5s ease;
     cursor: pointer;
+    border: none;
     
 
 }
@@ -158,18 +177,19 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-left: 70px;
 
 }
 .divDadosBrasil{ 
-    width: 470px;
-    height: 512px;
+    width: 400px;
+    height: 400px;
     background-image: url(../icons/map.png);
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 20px;
     text-align: center;
-    margin-left: -40px;
+    margin-left: -80px;
     transition: 1s ease;
+    margin-top: 5rem;
 
 }
 .divDadosBrasil:hover{
@@ -179,15 +199,15 @@ a{
 .titDadosBrasil{
     color: white;
     font-size: 40px;
-    padding-top: 7rem;
+    padding-top: 5.7rem;
 
 
 }
 .txtDadosBrasil{
     color: white;
-    font-size: 20px;
+    font-size: 17px;
     width: 200px;
-    padding-left: 11rem;
+    padding-left: 9rem;
     
 
 }
@@ -210,10 +230,11 @@ a{
     color: #ffffff;
     border-radius: 20px;
     margin-top: 130px;
-    margin-left: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
     background-color: #212D34;
     height: auto;
-    width: 350px;
+    width: 320px;
     transition: 0.5s ease;
 }
 /* aumenta o tamanho e troca a cor ao passar o cursor */
@@ -318,6 +339,9 @@ a{
     transition: 0.5s ease;
     
 }
+.imgOqueDoar{
+    transform: scale(1.1);
+}
 
 .subtitOptionOqDoar{
     font-size: 15px;
@@ -336,16 +360,6 @@ a{
     font-size: 13px;
 
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -629,6 +643,7 @@ a{
 }
 .txtDesfecho{
     padding-left: 50px;
+    padding-right: 30px;
 }
 .Fdireitosreservados{
     background-color: #f7835a;
@@ -727,10 +742,27 @@ a{
         padding: 90px;
         font-size: 17px;
     }
+    .divcolorBackInstituicao{
+        padding: 0;
+        margin: 0;
+        
+    }
+    .divImageBackInstituicao{
+        height: auto;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
+        
+    }
+    .divBackOpacidade{
+        border-radius: 0;
+
+    }
 
     .titleInstituicao{
         color: white;
-        font-size: 40px;
+        font-size: 35px;
         padding-top: 120px;
         padding-left: 40px;
     }
@@ -740,20 +772,22 @@ a{
         padding-top: 50px;
         padding-left: 40px;
         width: 60%;
-        font-size: 15px;
+        font-size: 12px;
     
     
     }
 
     .buttonInstituicao{
-        background-color: #ffffff;
-        border: none;
-        border-radius: 50px;
-        padding: 15px 50px;
-        cursor: pointer;
-        margin-top: 50px;
-        margin-left: 40px;
+       width: auto;
+       height: auto;
+       transform: scale(0.8);
+       margin-left: 25px;
+       margin-bottom: 20px;
     }
+    .buttonInstituicao:hover{
+        transform: scale(0.9);
+    }
+
     .imgIntegrante{
         width: 170px;
         height: 170px;
@@ -777,6 +811,177 @@ a{
     .ArticleIntegrantes{
         flex-direction: column;
     }
+    .divBackimgMotiv{
+        width: 100%;
+        background-image: none;
+        background-color: black;
+       
+    }
+    .titMotiv{
+        padding-top: 40px;
+        padding-bottom: 20px;
+       
+    }
+    .txtMotiv{
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+       
+    
+    }
+    .buttonQueroAjudar{
+        padding: 0;
+        margin-top: 25px;
+        padding: 12px;
+        
+    
+    }
+    .articleDadosBrasil{
+        height: auto;
+    
+        
+    
+    }
+    .divBackDadosBrasil{
+        flex-wrap: wrap;
+        height: auto;
+    
+    }
+    .divDadosBrasil{ 
+        text-align: center;
+        width: 280px;
+        height: 280px;
+        padding: 0;
+        margin: 0;
+      
+    }
+    
+    .titDadosBrasil{
+        font-size: 20px;
+        padding: 0;
+        margin-top: 50px;
+
+     
+    }
+    .txtDadosBrasil{
+        font-size: 15px;
+        padding-left: 45px;
+        margin: 0;
+     
+
+    }
+    
+
+    .sectionOqDoar{
+        flex-wrap: wrap;
+    }
+    .divLinhasobFooter{
+        width: 100%;
+        padding: 0;
+        margin-top: 7rem;
+        margin-left: 0px;
+       
+        
+    }
+    
+    
+    .h5Footer{
+        font-size: 12px;
+        padding: 0;
+        margin: 0px;
+        margin-left: 7px;
+    }
+   
+    
+    .footerUL{
+        font-size: 12px;
+        padding: 0;
+        margin-top: 15px;
+        
+    }
+    
+    .itemFooterMenu{
+        font-size: 12px;
+        padding: 0;
+        margin: 5px;
+        
+    }
+    
+    .divfooterContatosIntegrantes{
+        font-size: 12px;
+        padding: 0;
+        margin: 0;
+      
+        
+    }
+    
+    .footerULIntegrantes{
+        font-size: 12px;
+        padding: 0;
+        margin: 0;
+       
+    
+    }
+    .itemFooterIntegrantes{
+        font-size: 12px;
+        padding: 0;
+        margin: 5px;
+       
+    
+    }
+        
+    
+    .divfooterMapaSite{
+        font-size: 12px;
+        padding: 0;
+        margin: 0;
+        
+        
+    }
+    .h5Mapasite{
+        font-size: 12px;
+        padding: 0;
+        margin-left: 7px;
+        
+    
+    }
+  
+    .footerULMapaSite{
+        font-size: 12px;
+        padding: 0;
+        margin: 15px;
+       
+    
+    }
+    .itemFooterMapaSite{
+        font-size: 12px;
+        padding-top: 10px;
+        margin: 0px;
+        
+    
+    }
+   
+    
+    .h5DesfechoProjeto{
+        font-size: 0px;
+        padding: 0;
+        margin: 0;
+        
+    }
+    .txtDesfecho{
+        font-size: 0px;
+        padding: 0;
+        margin: 0;
+        
+    }
+    .Fdireitosreservados{
+        font-size: 12px;
+        padding-top: 30px;
+        margin: 0;
+       
+    }
+    
+        
 
     
  
