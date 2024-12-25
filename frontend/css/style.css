@@ -16,8 +16,9 @@ body{
     background-image: url(../images/altosurubi1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: auto;
+    height: 1060px;
     width: 100%;
+   
 }
 /* Sobreposição escura semitransparente sobre a imagem de fundo. */
 .divbackimg{
@@ -50,6 +51,7 @@ body{
     color: #f7835a;
     transform: scale(1.2);
 }
+
 /* Remove o estilo padrão dos links e define o cursor como clicável. */
 a{
     all: unset;
@@ -82,13 +84,20 @@ a{
     height: 50px;
     background-color: #f7845a14;
     backdrop-filter: blur(5px);
+    z-index: 1000;
     
+
+}
+.logoResendeAcao{
+    width: 200px;
+    height: 200px;
+    padding-left: 23em;
+    padding-top: 5rem;
 
 }
 /* Títulos grandes com alinhamento e espaçamento para destaque. */
 .tit{
     padding-left: 70px;
-    padding-top: 200px;
     color: white;
     font-size: 90px;
     display: flex;
@@ -128,14 +137,52 @@ a{
 
 
 
-.divBackimgMotiv{
+.videobackground {
+    position: relative;
     width: 100%;
-    height: 500px;
-    background-image: url(../images/imgsitrua.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 100vh; 
+    
+  }
+  
+  /* Estilos para o vídeo de fundo */
+  .videobackground video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+  }
+  
+  /* Estilos para o conteúdo sobre o vídeo */
+  .divTitleTextMotiv {
+    position: relative;
+    z-index: 1;
+    color: white;
     text-align: center;
-}
+    padding: 20px;
+  }
+  
+  .titleMotiv{
+    font-size: 3em;
+    margin-bottom: 20px;
+    padding-top: 10rem;
+  }
+  
+  .txtMotiv {
+    font-size: 1.5em;
+  }
+
+
+
+
+
+
+
+
+
+
+
 .titMotiv{
     font-size: 40px;
     color: #f7835a;
@@ -425,8 +472,8 @@ a{
 }
 
 .divCompartilhamento{
-    display: flex;
-    background-image: url(../images/Design\ sem\ nome\ \(2\).png);
+    display: grid;
+    background-image: url(../images/child-5445463_1920.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -434,9 +481,9 @@ a{
     text-align: center;
     padding-top: 5rem;
     padding-bottom: 5rem;
-    
-    
-    
+    filter: grayscale(0%);  
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -444,17 +491,36 @@ a{
     font-size: 50px;
     text-align: center;
 }
+.imgresponsividade{
+    width: 800px;
+    height: 430px;
+    background-image: url(../images/imgdesktopmobile\ .png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+    margin-left: 33rem;
+    
+    
+}
 
 .diviimgetitcompartilhamento{
-    position: absolute;
-    left: 0;
-    padding-left: 30rem;
-    display: grid;
-    width: 500px;
-    height: 200px;
+   text-align: center;
+   color: white;
+
+
+}
+.txtCompartilhamento{
+    padding-left: 10rem;
+    padding-right:10rem;
+    padding-top: 2rem;
+}
+.divApoiadores{
+    width: 100%;
+    height: 100px;
+    background-color: #000E17;
     color: white;
-
-
+    text-align: center;
+    
 }
 
  
@@ -464,6 +530,8 @@ a{
     width: 100%;
     height: auto;
     text-align: center;
+    
+    justify-content: center;
     padding-bottom: 50px;
 }
 /* Estilo para o título dentro da seção de integrantes */
@@ -476,6 +544,7 @@ a{
 .ArticleIntegrantes{
     display: flex;
     justify-content: center;
+    
 }
 /* Estilo para cada cartão individual de integrante */
 .divIntegrante{
@@ -488,6 +557,7 @@ a{
     width: 280px;
     height: 300px;
     justify-content: center;
+    
     box-sizing: border-box;
     box-shadow: 1px 1px 20px 1px #000E17;
     
@@ -573,6 +643,16 @@ a{
     box-shadow: 5px 1px 5px 1px rgba(255, 255, 255, 0.4);
     margin-left: 5rem;
     
+}
+.H2agradecimento{
+    color: white;
+    font-size: 30px;
+    padding-top: 5rem;
+
+}
+.logosobfooter{
+    width: 300px;
+    height: 300px;
 }
 .AbaFooter{
     padding-top: 2rem;
@@ -1026,6 +1106,84 @@ a{
         margin: 0;
        
     }
+    .logoResendeAcao{
+        padding-top: 5rem;
+        padding-left: 7rem;
+        padding-bottom: 2rem;
+        margin: 0;
+        width: 150px;
+        height: 150px;
+    }
+    .diviimgetitcompartilhamento{
+        padding: 0;
+        margin: 0;
+        width: auto;
+        height: auto;
+    }
+    .divCompartilhamento{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .h1compartilhamento{
+        padding-top: 4rem;
+        font-size: 30px;
+        padding-bottom: 2rem;
+    }
+    .imgresponsividade{
+        width: 100%;
+        height: 180px;
+        background-image: url(../images/imgdesktopmobile\ .png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-bottom: 3rem;
+    }
+    .txtCompartilhamento{
+        margin:30px;
+    }
+    .titleMotiv{
+        font-size: 30px;
+        margin-bottom: 20px;
+        padding-top: 10rem;
+    }
+      
+    .txtMotiv {
+        font-size: 15px;
+    }
+    
+
+    .h1compartilhamento{
+        font-size: 30px;
+    
+    }
+    .imgresponsividade{
+        margin: 0;
+        padding-bottom: 40px;
+        
+        
+    }
+
+    .diviimgetitcompartilhamento{
+    text-align: center;
+    color: white;
+
+
+    }
+    .txtCompartilhamento{
+        margin: 0;
+        padding: 20px;
+    }
+    .H2agradecimento{
+        font-size: 20px;
+    }
+    .logosobfooter{
+        width: 200px;
+        height: 200px;
+    }
+    .h2Integrantes{
+        font-size: 30px;
+    }
+    
     
         
 
