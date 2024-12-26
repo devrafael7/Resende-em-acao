@@ -23,7 +23,7 @@ body{
 /* Sobreposição escura semitransparente sobre a imagem de fundo. */
 .divbackimg{
     background-color: rgba(0, 0, 0, 0.747);
-    height: auto;
+    height: 1060px;
     width: 100%;
 
 }
@@ -521,11 +521,14 @@ a{
 .ArticleIntegrantes{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     
 }
 /* Estilo para cada cartão individual de integrante */
 .divIntegrante{
     display: flex;
+    flex-grow: 1;
+    flex-basis: 200;
     background-color: #000e17bf;
     border-radius: 20px;
     margin-top: 12rem;
@@ -534,7 +537,6 @@ a{
     width: 280px;
     height: 300px;
     justify-content: center;
-    
     box-sizing: border-box;
     box-shadow: 1px 1px 20px 1px #000E17;
     
@@ -553,6 +555,8 @@ a{
     box-shadow: 1px 1px 15px 3px rgb(0, 0, 0);
     transform: translateY(-50%);
     transition: 1s ease;
+    
+    
 }
 
 /* Contêiner para o texto e título do integrante */
@@ -1145,7 +1149,7 @@ a{
     .divbackimg{
         padding: 0;
         margin: 0;
-        height: 1060px;
+        height: 100%;
     }
     
     
