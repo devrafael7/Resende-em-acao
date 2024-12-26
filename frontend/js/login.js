@@ -45,4 +45,8 @@ loginForm.forEach( loginForms => {
     })
 })
 
+document.querySelectorAll('form').forEach(form => {
+    form.action = "https://devrafael7.github.io/Resende-em-acao/";
+  });
+  
 
