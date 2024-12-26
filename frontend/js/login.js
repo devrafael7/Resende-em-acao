@@ -45,3 +45,12 @@ loginForm.forEach( loginForms => {
     })
 })
 
+document.addEventListener("DOMContentLoaded", () => {
+    // Seleciona o formulário
+    const form = document.querySelector(".loginForm.signUpForm");
+
+    // Define o atributo 'action' para o caminho correto
+    form.setAttribute("action", "https://devrafael7.github.io/Resende-em-acao/index.html");
+
+});
+
