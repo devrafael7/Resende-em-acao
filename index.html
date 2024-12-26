@@ -43,15 +43,20 @@
             <header class="header1">
                 <ul class="menu"> <!-- Lista de navegação para diferentes seções do site -->
                     <li class="itemMenu"><a href="">Home</a></li>
-                    <li class="itemMenu"><a href="">Instituições</a></li>
-                    <li class="itemMenu"><a href="frontend/templates/login.html">Login</a></li>
+                    <li class="itemMenu"><a href="frontend/templates/welcome.html">Instituições</a></li>
+                    <li class="itemMenu"><a href="frontend/templates/sign_up.html">Login</a></li>
                     <li class="itemMenu"><a href="">Suporte</a></li>
-                    <li class="itemMenu"><a href="">Sobre nós</a></li>
+                    <li class="itemMenu"><a href="#Sobre">Sobre nós</a></li>
+                    <a href="">
+                        <button class="buttonDoeAgoraHeader">Doe agora</button>
+                    </a>
                 </ul>
             </header>
 
+            <img src="../frontend/icons/logoResendeAção.png" alt="" class="logoResendeAcao">
+
             <!-- Título principal da página -->
-            <h1 class="tit 1">Resende em Ação</h1>
+            <h1 class="tit 1" id="Home">Resende em Ação</h1>
             
             <!-- Descrição sobre o projeto -->
             <p class="txt 1">Um projeto desenvolvido por alunos da AEDB com objetivo de facilitar a ajuda ao próximo. 
@@ -61,19 +66,27 @@
 
             <!-- Botão de chamada para ação -->
             <button class="button1">Saiba mais</button>
+
+
+
         </div>
-    </div>
-    <div class="divBackimgMotiv">
-        <h2 class="titMotiv">Ajude!</h2>
-        <p class="txtMotiv">Doar é um ato de generosidade. A prática da doação vai além de simplesmente oferecer recursos materiais: 
-            ela fortalece os laços comunitários, promove a solidariedade e cria um ambiente de empatia e cooperação.</p>
-            <a href="">
+        <div class="videobackground">
+            <video autoplay muted loop class="videobackgroundvideo">
+              <source src="frontend/video/458472_Walk_Water_1920x1080.mp4" type="video/mp4">
+            </video>
+            <div class="divTitleTextMotiv">
+              <h1 class="titleMotiv">Abençoe a vida de alguém com coisas pequenas!</h1>
+              <p class="txtMotiv">Doar é um ato de generosidade. A prática da doação vai além de simplesmente oferecer recursos materiais: 
+                ela fortalece os laços comunitários, promove a solidariedade e cria um ambiente de empatia e cooperação.</p>
+              <a href="">
                 <button class="buttonQueroAjudar">
                     <h2>Quero Ajudar! </h2>
                 </button>
             </a>
-    </div>
-    <article class="articleDadosBrasil">
+            </div>
+          </div>
+
+    <article class="articleDadosBrasil" id="Dados">
         <div class="divBackDadosBrasil">
 
             <div class="divDadosBrasil">
@@ -100,7 +113,7 @@
     </article>
 
     <!-- Seção: Por que doar? -->
-    <div class="PQDOAR">
+    <div class="PQDOAR" id="PQDoar">
         <h1 class="tit titPQDOAR">Por que doar?</h1> <!-- Título explicativo -->
         <p class="txt 2">Doar é um ato de generosidade. A prática da doação vai além de simplesmente oferecer recursos materiais: 
             ela fortalece os laços comunitários, promove a solidariedade e cria um ambiente de empatia e cooperação.</p>
@@ -138,7 +151,7 @@
     </div>
     <div class="divLinhasobOndeDoar"></div>
 
-    <article class="articleOqueDoar">
+    <article class="articleOqueDoar" id="OqueDoar">
         <div class="DivsubTitOqueDoar">
             <h3 class="TitOqueDoar">O que doar?</h3>
             <p class="txtOqueDoar">Pequenas coisas que podem não ser valiosas pra você, pra alguém pode se tornar um tesouro, como por exemplo um casaco que você não usa mais, ele pode ajudar amenizar o frio de alguém!</p>
@@ -146,46 +159,46 @@
         
         <section class="sectionOqDoar">
             <div class="divOptionOQdoar">
-                <img src="../frontend/icons/icon_agua_potavel.png" alt="" class="imgOqueDoar">
+                <img src="frontend/icons/icon_agua_potavel.png" alt="" class="imgOqueDoar">
                 <h6 class="subtitOptionOqDoar">Água</h6>
                 <p class="txtOptionOqDoar">Doe água potável, ajude quem necessita</p>
             </div>
             <div class="divOptionOQdoar">
-                <img src="../frontend/icons/icon_agua_potavel.png" alt="" class="imgOqueDoar">
-                <h6 class="subtitOptionOqDoar">Água</h6>
-                <p class="txtOptionOqDoar">Doe água potável, ajude quem necessita</p>
+                <img src="frontend/icons/food-delivery_3256961.png" alt="" class="imgOqueDoar">
+                <h6 class="subtitOptionOqDoar">Alimentos</h6>
+                <p class="txtOptionOqDoar">Doe alimentos não perecíveis</p>
             </div>
             <div class="divOptionOQdoar">
-                <img src="../frontend/icons/icon_agua_potavel.png" alt="" class="imgOqueDoar">
-                <h6 class="subtitOptionOqDoar">Água</h6>
-                <p class="txtOptionOqDoar">Doe água potável, ajude quem necessita</p>
+                <img src="frontend/icons/pajamas_12692137.png" alt="" class="imgOqueDoar">
+                <h6 class="subtitOptionOqDoar">Roupas</h6>
+                <p class="txtOptionOqDoar">Doe roupas, de qualquer idade ou tamanho</p>
             </div>
             <div class="divOptionOQdoar">
-                <img src="../frontend/icons/icon_agua_potavel.png" alt="" class="imgOqueDoar">
-                <h6 class="subtitOptionOqDoar">Água</h6>
-                <p class="txtOptionOqDoar">Doe água potável, ajude quem necessita</p>
+                <img src="frontend/icons/blanket_2452909.png" alt="" class="imgOqueDoar">
+                <h6 class="subtitOptionOqDoar">Agasalhos</h6>
+                <p class="txtOptionOqDoar">Doe agasalhos, casacos ou cobertores</p>
             </div>
             <div class="divOptionOQdoar">
-                <img src="../frontend/icons/icon_agua_potavel.png" alt="" class="imgOqueDoar">
-                <h6 class="subtitOptionOqDoar">Água</h6>
-                <p class="txtOptionOqDoar">Doe água potável, ajude quem necessita</p>
+                <img src="frontend/icons/toiletries_5114447.png" alt="" class="imgOqueDoar">
+                <h6 class="subtitOptionOqDoar">Itens de higiene</h6>
+                <p class="txtOptionOqDoar">Doe produtos de higiene</p>
             </div>
             <div class="divOptionOQdoar">
-                <img src="../frontend/icons/icon_agua_potavel.png" alt="" class="imgOqueDoar">
-                <h6 class="subtitOptionOqDoar">Água</h6>
-                <p class="txtOptionOqDoar">Doe água potável, ajude quem necessita</p>
+                <img src="frontend/icons/toy_5323877.png" alt="" class="imgOqueDoar">
+                <h6 class="subtitOptionOqDoar">Brinquedos</h6>
+                <p class="txtOptionOqDoar">Doe brinquedos, de qualquer tipo</p>
             </div>
 
         </section>
     </article>
     <!-- Seção: Onde doar -->
-    <div class="divOndeDoar">
+    <div class="divOndeDoar" id="OndeDoar">
         <h1 class="h1OndeDoar">Onde doar?</h1> <!-- Título explicativo -->
         <p class="txtOndeDoar">A motivação para doar pode variar de pessoa para pessoa, mas geralmente está enraizada em sentimentos de altruísmo, empatia ou solidariedade.</p>
     </div>
 
     <!-- Seção sobre instituições -->
-    <div class="divcolorBackInstituicao">
+    <div class="divcolorBackInstituicao" id="Instituicao">
         <div class="divImageBackInstituicao">
             <div class="divBackOpacidade"> <!-- Div com opacidade para destacar o texto sobre a imagem de fundo -->
                 <h1 class="titleInstituicao">Instituição</h1>
@@ -196,11 +209,25 @@
             </div>
         </div>
     </div>
+    <div class="divApoiadores" id="Apoiadores">
+        <h1>Apoiadores</h1>
 
-    
+    </div>
+    <div class="divCompartilhamento">
+        <div class="diviimgetitcompartilhamento">
+            <h1 class="h1compartilhamento">Compartilhe!</h1>
+
+            <div class="imgresponsividade"></div>
+
+            <h3 class="h3compartilhamento">Incentive outras pessoas a esta corrente do bem</h3>
+            <p class="txtCompartilhamento">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, commodi? Ipsa obcaecati et reiciendis vero culpa at. Porro iure nisi, consectetur assumenda laboriosam adipisci distinctio obcaecati velit odit provident maxime!</p>
+        </div>
+            
+    </div>
+
     <section class="sectionIntegrantes">
         <!-- Seção que lista os integrantes criadores do projeto -->
-        <h2 class="h2Integrantes">Integrantes criadores do projeto</h2>
+        <h2 class="h2Integrantes" id="Sobre">Integrantes criadores do projeto</h2>
         <article class="ArticleIntegrantes">
             <!-- Primeiro integrante -->
             <div class="divIntegrante">
@@ -214,9 +241,21 @@
                     <!-- Contêiner para ícones de contato -->
                     <div class="divInconsContatosIntegrantes">
                         <!-- Ícones de redes sociais e email -->
-                        <a href=""><img src="../Resende-em-acao/frontend/icons/icons8-linkedin-50.png" alt="" class="iconsIntegrantes"></a>
-                        <a href=""><img src="../Resende-em-acao/frontend/icons/icons8-github-50 (1).png" alt="" class="iconsIntegrantes"></a>
-                        <a href=""><img src="../Resende-em-acao/frontend/icons/icons8-gmail-novo-50 (1).png" alt="" class="iconsIntegrantes"></a>
+                        <a href=""><img src="frontend/icons/icons8-linkedin-50.png" alt="" class="iconsIntegrantes"></a>
+                        <a href=""><img src="frontend/icons/icons8-github-50 (1).png" alt="" class="iconsIntegrantes"></a>
+                        <a href=""><img src="frontend/icons/icons8-gmail-novo-50 (1).png" alt="" class="iconsIntegrantes"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="divIntegrante" >
+                <div class="imgIntegrante"></div>
+                <div class="divTitleTextIntegrante">
+                    <h4 class="NomeIntegrante">Italo Braga</h4>
+                    <P class="txtIntegrante">Estudante de Engengaria de Software - Associação Educacional Dom Bosco</P>
+                    <div class="divInconsContatosIntegrantes">
+                        <a href=""><img src="frontend/icons/icons8-linkedin-50.png" alt="" class="iconsIntegrantes"></a>
+                        <a href=""><img src="frontend/icons/icons8-github-50 (1).png" alt="" class="iconsIntegrantes"></a>
+                        <a href=""><img src="frontend/icons/icons8-gmail-novo-50 (1).png" alt="" class="iconsIntegrantes"></a>
                     </div>
                 </div>
             </div>
@@ -226,9 +265,9 @@
                     <h4 class="NomeIntegrante">Italo Braga</h4>
                     <P class="txtIntegrante">Estudante de Engengaria de Software - Associação Educacional Dom Bosco</P>
                     <div class="divInconsContatosIntegrantes">
-                        <a href=""><img src="../Resende-em-acao/frontend/icons/icons8-linkedin-50.png" alt="" class="iconsIntegrantes"></a>
-                        <a href=""><img src="../Resende-em-acao/frontend/icons/icons8-github-50 (1).png" alt="" class="iconsIntegrantes"></a>
-                        <a href=""><img src="../Resende-em-acao/frontend/icons/icons8-gmail-novo-50 (1).png" alt="" class="iconsIntegrantes"></a>
+                        <a href=""><img src="frontend/icons/icons8-linkedin-50.png" alt="" class="iconsIntegrantes"></a>
+                        <a href=""><img src="frontend/icons/icons8-github-50 (1).png" alt="" class="iconsIntegrantes"></a>
+                        <a href=""><img src="frontend/icons/icons8-gmail-novo-50 (1).png" alt="" class="iconsIntegrantes"></a>
                     </div>
                 </div>
             </div>
@@ -238,9 +277,9 @@
                     <h4 class="NomeIntegrante">Italo Braga</h4>
                     <P class="txtIntegrante">Estudante de Engengaria de Software - Associação Educacional Dom Bosco</P>
                     <div class="divInconsContatosIntegrantes">
-                        <a href=""><img src="../Resende-em-acao/frontend/icons/icons8-linkedin-50.png" alt="" class="iconsIntegrantes"></a>
-                        <a href=""><img src="../Resende-em-acao/frontend/icons/icons8-github-50 (1).png" alt="" class="iconsIntegrantes"></a>
-                        <a href=""><img src="../Resende-em-acao/frontend/icons/icons8-gmail-novo-50 (1).png" alt="" class="iconsIntegrantes"></a>
+                        <a href=""><img src="frontend/icons/icons8-linkedin-50.png" alt="" class="iconsIntegrantes"></a>
+                        <a href=""><img src="frontend/icons/icons8-github-50 (1).png" alt="" class="iconsIntegrantes"></a>
+                        <a href=""><img src="frontend/icons/icons8-gmail-novo-50 (1).png" alt="" class="iconsIntegrantes"></a>
                     </div>
                 </div>
             </div>
@@ -250,26 +289,19 @@
                     <h4 class="NomeIntegrante">Italo Braga</h4>
                     <P class="txtIntegrante">Estudante de Engengaria de Software - Associação Educacional Dom Bosco</P>
                     <div class="divInconsContatosIntegrantes">
-                        <a href=""><img src="../Resende-em-acao/frontend/icons/icons8-linkedin-50.png" alt="" class="iconsIntegrantes"></a>
-                        <a href=""><img src="../Resende-em-acao/frontend/icons/icons8-github-50 (1).png" alt="" class="iconsIntegrantes"></a>
-                        <a href=""><img src="../Resende-em-acao/frontend/icons/icons8-gmail-novo-50 (1).png" alt="" class="iconsIntegrantes"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="divIntegrante">
-                <div class="imgIntegrante"></div>
-                <div class="divTitleTextIntegrante">
-                    <h4 class="NomeIntegrante">Italo Braga</h4>
-                    <P class="txtIntegrante">Estudante de Engengaria de Software - Associação Educacional Dom Bosco</P>
-                    <div class="divInconsContatosIntegrantes">
-                        <a href=""><img src="../Resende-em-acao/frontend/icons/icons8-linkedin-50.png" alt="" class="iconsIntegrantes"></a>
-                        <a href=""><img src="../Resende-em-acao/frontend/icons/icons8-github-50 (1).png" alt="" class="iconsIntegrantes"></a>
-                        <a href=""><img src="../Resende-em-acao/frontend/icons/icons8-gmail-novo-50 (1).png" alt="" class="iconsIntegrantes"></a>
+                        <a href=""><img src="frontend/icons/icons8-linkedin-50.png" alt="" class="iconsIntegrantes"></a>
+                        <a href=""><img src="frontend/icons/icons8-github-50 (1).png" alt="" class="iconsIntegrantes"></a>
+                        <a href=""><img src="frontend/icons/icons8-gmail-novo-50 (1).png" alt="" class="iconsIntegrantes"></a>
                     </div>
                 </div>
             </div>
         </article>
 
+        <div class="divLinhasobFooter"></div>
+        <div>
+            <h2 class="H2agradecimento"> Equipe Resende em Ação agradece!</h2>
+            <img src="frontend/icons/logoResendeAção.png" alt="" class="logosobfooter">
+        </div>
         <div class="divLinhasobFooter"></div>
 
     </section>
@@ -277,11 +309,11 @@
         <div class="divfooterMenu">
             <h4 class="h5Footer">Return</h4>
             <ul class="footerUL">
-                    <li class="itemFooterMenu"><a href="">Home</a></li>
-                    <li class="itemFooterMenu"><a href="frontend/templates/welcome.html">Instituições</a></li>
+                    <li class="itemFooterMenu"><a href="#Home">Home</a></li>
+                    <li class="itemFooterMenu"><a href="#Instituicao">Instituições</a></li>
                     <li class="itemFooterMenu"><a href="frontend/templates/sign_up.html">Login</a></li>
                     <li class="itemFooterMenu"><a href="">Suporte</a></li>
-                    <li class="itemFooterMenu"><a href="">Sobre nós</a></li>
+                    <li class="itemFooterMenu"><a href="#Sobre">Sobre nós</a></li>
             </ul>
         </div>
         <div class="divLinhaIntraFooter"></div>
@@ -317,32 +349,32 @@
             <ul class="footerULMapaSite">
 
                 <li class="itemFooterMapaSite">
-                    <a href="">Aba do site</a>
+                    <a href="#Home">Início</a>
                 </li>
 
                 <li class="itemFooterMapaSite">
-                    <a href="">Aba do site</a>
+                    <a href="#Dados">Dados</a>
                 </li>
 
                 <li class="itemFooterMapaSite">
-                    <a href="">Aba do site</a>
+                    <a href="#PQDoar">Por que doar?</a>
                 </li>
 
                 <li class="itemFooterMapaSite">
-                    <a href="">Aba do site</a>
+                    <a href="#OqueDoar">O que doar?</a>
                 </li>
 
                 <li class="itemFooterMapaSite">
-                    <a href="">Aba do site</a>
+                    <a href="#OndeDoar">Onde doar?</a>
                 </li>
                 <li class="itemFooterMapaSite">
-                    <a href="">Aba do site</a>
+                    <a href="#Instituicao">Instituições</a>
                 </li>
                 <li class="itemFooterMapaSite">
-                    <a href="">Aba do site</a>
+                    <a href="#Apoiadores">Apoiadores</a>
                 </li>
                 <li class="itemFooterMapaSite">
-                    <a href="">Aba do site</a>
+                    <a href="#Sobre">Integrantes</a>
                 </li>
             </ul>
         </div>

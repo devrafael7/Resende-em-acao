@@ -16,13 +16,14 @@ body{
     background-image: url(../images/altosurubi1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: auto;
+    height: 1060px;
     width: 100%;
+   
 }
 /* Sobreposição escura semitransparente sobre a imagem de fundo. */
 .divbackimg{
     background-color: rgba(0, 0, 0, 0.747);
-    height: auto;
+    height: 1060px;
     width: 100%;
 
 }
@@ -50,10 +51,29 @@ body{
     color: #f7835a;
     transform: scale(1.2);
 }
+
 /* Remove o estilo padrão dos links e define o cursor como clicável. */
 a{
     all: unset;
     cursor: pointer;
+}
+.buttonDoeAgoraHeader{
+    border-radius: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 7px;
+    margin-right: 25px;
+    padding: 8px;
+    background-color: #f7835a;
+    color: white;
+    border: none;
+    font-size: 15px;
+}
+.buttonDoeAgoraHeader:hover{
+    background-color: #f08b2c;
+    transform: scale(1.1);
+
 }
 /* Cabeçalho fixo no topo da página com fundo transparente. */
 .header1{
@@ -64,13 +84,20 @@ a{
     height: 50px;
     background-color: #f7845a14;
     backdrop-filter: blur(5px);
+    z-index: 1000;
     
+
+}
+.logoResendeAcao{
+    width: 200px;
+    height: 200px;
+    padding-left: 23em;
+    padding-top: 5rem;
 
 }
 /* Títulos grandes com alinhamento e espaçamento para destaque. */
 .tit{
     padding-left: 70px;
-    padding-top: 200px;
     color: white;
     font-size: 90px;
     display: flex;
@@ -110,28 +137,43 @@ a{
 
 
 
-.divBackimgMotiv{
+.videobackground {
+    position: relative;
     width: 100%;
-    height: 500px;
-    background-image: url(../images/imgsitrua.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 100vh; 
+    
+    
+}
+  
+  /* Estilos para o vídeo de fundo */
+  .videobackground video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    filter: grayscale(100%);
+  }
+  
+  /* Estilos para o conteúdo sobre o vídeo */
+  .divTitleTextMotiv {
+    position: relative;
+    z-index: 1;
+    color: #f08b2c;
     text-align: center;
+    padding: 20px;
+    backdrop-filter: blur(1.5px);
+    
+  }
+  
+  .titleMotiv{
+    font-size: 3em;
+    margin-bottom: 20px;
+    padding-top: 10rem;
 }
-.titMotiv{
-    font-size: 40px;
-    color: #f7835a;
-    padding-top: 8rem;
 
-}
-.txtMotiv{
-    padding-top: 2rem;
-    padding-left: 10rem;
-    padding-right: 10rem;
-    font-size: 20px;
-    color: white;
 
-}
 .buttonQueroAjudar{
     padding: 15px;
     border-radius: 20px;
@@ -139,6 +181,7 @@ a{
     background-color: #f7835a;
     transition: 0.5s ease;
     cursor: pointer;
+    border: none;
     
 
 }
@@ -158,18 +201,19 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-left: 70px;
 
 }
 .divDadosBrasil{ 
-    width: 470px;
-    height: 512px;
+    width: 400px;
+    height: 400px;
     background-image: url(../icons/map.png);
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 20px;
     text-align: center;
-    margin-left: -40px;
+    margin-left: -80px;
     transition: 1s ease;
+    margin-top: 5rem;
 
 }
 .divDadosBrasil:hover{
@@ -179,15 +223,15 @@ a{
 .titDadosBrasil{
     color: white;
     font-size: 40px;
-    padding-top: 7rem;
+    padding-top: 5.7rem;
 
 
 }
 .txtDadosBrasil{
     color: white;
-    font-size: 20px;
+    font-size: 17px;
     width: 200px;
-    padding-left: 11rem;
+    padding-left: 9rem;
     
 
 }
@@ -210,10 +254,11 @@ a{
     color: #ffffff;
     border-radius: 20px;
     margin-top: 130px;
-    margin-left: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
     background-color: #212D34;
     height: auto;
-    width: 350px;
+    width: 320px;
     transition: 0.5s ease;
 }
 /* aumenta o tamanho e troca a cor ao passar o cursor */
@@ -318,6 +363,9 @@ a{
     transition: 0.5s ease;
     
 }
+.imgOqueDoar{
+    transform: scale(1.1);
+}
 
 .subtitOptionOqDoar{
     font-size: 15px;
@@ -336,16 +384,6 @@ a{
     font-size: 13px;
 
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -410,12 +448,67 @@ a{
     transform: scale(1.2);
 }
 
+.divCompartilhamento{
+    display: grid;
+    background-image: url(../images/child-5445463_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    filter: grayscale(0%);  
+    align-items: center;
+    justify-content: center;
+
+}
+
+.h1compartilhamento{
+    font-size: 50px;
+    text-align: center;
+}
+.imgresponsividade{
+    width: 800px;
+    height: 430px;
+    background-image: url(../images/imgdesktopmobile\ .png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+    margin-left: 33rem;
+    
+    
+}
+
+.diviimgetitcompartilhamento{
+   text-align: center;
+   color: white;
+
+
+}
+.txtCompartilhamento{
+    padding-left: 10rem;
+    padding-right:10rem;
+    padding-top: 2rem;
+}
+.divApoiadores{
+    width: 100%;
+    height: 100px;
+    background-color: #000E17;
+    color: white;
+    text-align: center;
+    
+}
+
+ 
 /* Estilo para a seção de integrantes */
 .sectionIntegrantes{
     background: linear-gradient(#f7835a,#f9f9f9, #f08b2c);
     width: 100%;
     height: auto;
     text-align: center;
+    
+    justify-content: center;
     padding-bottom: 50px;
 }
 /* Estilo para o título dentro da seção de integrantes */
@@ -428,10 +521,14 @@ a{
 .ArticleIntegrantes{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    
 }
 /* Estilo para cada cartão individual de integrante */
 .divIntegrante{
     display: flex;
+    flex-grow: 1;
+    flex-basis: 200;
     background-color: #000e17bf;
     border-radius: 20px;
     margin-top: 12rem;
@@ -458,6 +555,8 @@ a{
     box-shadow: 1px 1px 15px 3px rgb(0, 0, 0);
     transform: translateY(-50%);
     transition: 1s ease;
+    
+    
 }
 
 /* Contêiner para o texto e título do integrante */
@@ -525,6 +624,16 @@ a{
     box-shadow: 5px 1px 5px 1px rgba(255, 255, 255, 0.4);
     margin-left: 5rem;
     
+}
+.H2agradecimento{
+    color: white;
+    font-size: 30px;
+    padding-top: 5rem;
+
+}
+.logosobfooter{
+    width: 300px;
+    height: 300px;
 }
 .AbaFooter{
     padding-top: 2rem;
@@ -629,6 +738,7 @@ a{
 }
 .txtDesfecho{
     padding-left: 50px;
+    padding-right: 30px;
 }
 .Fdireitosreservados{
     background-color: #f7835a;
@@ -643,6 +753,12 @@ a{
 
 /* Ajustando responsividade para mobile*/
 @media  (max-width: 768px) {
+    
+    .buttonDoeAgoraHeader{
+        all: unset;
+        font-size: 0;
+    }
+    
 
     .header1{
         margin-top: 0;
@@ -695,6 +811,12 @@ a{
         margin-left: 40px;
         margin-top: 80px;
         margin-bottom: 320px; 
+        transform: scale(0.8);
+        
+    }
+    .button1:hover{
+        transform: scale(0.9);
+
     }
 
     .card{
@@ -727,10 +849,27 @@ a{
         padding: 90px;
         font-size: 17px;
     }
+    .divcolorBackInstituicao{
+        padding: 0;
+        margin: 0;
+        
+    }
+    .divImageBackInstituicao{
+        height: auto;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
+        
+    }
+    .divBackOpacidade{
+        border-radius: 0;
+
+    }
 
     .titleInstituicao{
         color: white;
-        font-size: 40px;
+        font-size: 35px;
         padding-top: 120px;
         padding-left: 40px;
     }
@@ -740,20 +879,22 @@ a{
         padding-top: 50px;
         padding-left: 40px;
         width: 60%;
-        font-size: 15px;
+        font-size: 12px;
     
     
     }
 
     .buttonInstituicao{
-        background-color: #ffffff;
-        border: none;
-        border-radius: 50px;
-        padding: 15px 50px;
-        cursor: pointer;
-        margin-top: 50px;
-        margin-left: 40px;
+       width: auto;
+       height: auto;
+       transform: scale(0.8);
+       margin-left: 25px;
+       margin-bottom: 20px;
     }
+    .buttonInstituicao:hover{
+        transform: scale(0.9);
+    }
+
     .imgIntegrante{
         width: 170px;
         height: 170px;
@@ -777,6 +918,242 @@ a{
     .ArticleIntegrantes{
         flex-direction: column;
     }
+    .buttonQueroAjudar{
+        padding: 0;
+        margin-top: 25px;
+        padding: 12px;
+        
+    
+    }
+    .articleDadosBrasil{
+        height: auto;
+    
+        
+    
+    }
+    .divBackDadosBrasil{
+        flex-wrap: wrap;
+        height: auto;
+    
+    }
+    .divDadosBrasil{ 
+        text-align: center;
+        width: 300px;
+        height: 300px;
+        padding: 0;
+        margin: 0;
+      
+    }
+    
+    .titDadosBrasil{
+        font-size: 20px;
+        padding: 0;
+        margin-top: 50px;
+
+     
+    }
+    .txtDadosBrasil{
+        font-size: 15px;
+        padding-left: 45px;
+        margin: 0;
+     
+
+    }
+    
+
+    .sectionOqDoar{
+        flex-wrap: wrap;
+    }
+    .divLinhasobFooter{
+        width: 100%;
+        padding: 0;
+        margin-top: 7rem;
+        margin-left: 0px;
+       
+        
+    }
+    
+    
+    .h5Footer{
+        font-size: 12px;
+        padding: 0;
+        margin: 0px;
+        margin-left: 7px;
+    }
+   
+    
+    .footerUL{
+        font-size: 12px;
+        padding: 0;
+        margin-top: 15px;
+        
+    }
+    
+    .itemFooterMenu{
+        font-size: 12px;
+        padding: 0;
+        margin: 5px;
+        
+    }
+    
+    .divfooterContatosIntegrantes{
+        font-size: 12px;
+        padding: 0;
+        margin: 0;
+      
+        
+    }
+    
+    .footerULIntegrantes{
+        font-size: 12px;
+        padding: 0;
+        margin: 0;
+       
+    
+    }
+    .itemFooterIntegrantes{
+        font-size: 12px;
+        padding: 0;
+        margin: 5px;
+       
+    
+    }
+        
+    
+    .divfooterMapaSite{
+        font-size: 12px;
+        padding: 0;
+        margin: 0;
+        
+        
+    }
+    .h5Mapasite{
+        font-size: 12px;
+        padding: 0;
+        margin-left: 7px;
+        
+    
+    }
+  
+    .footerULMapaSite{
+        font-size: 12px;
+        padding: 0;
+        margin: 15px;
+       
+    
+    }
+    .itemFooterMapaSite{
+        font-size: 12px;
+        padding-top: 10px;
+        margin: 0px;
+        
+    
+    }
+   
+    
+    .h5DesfechoProjeto{
+        font-size: 0px;
+        padding: 0;
+        margin: 0;
+        
+    }
+    .txtDesfecho{
+        font-size: 0px;
+        padding: 0;
+        margin: 0;
+        
+    }
+    .Fdireitosreservados{
+        font-size: 12px;
+        padding-top: 30px;
+        margin: 0;
+       
+    }
+    .logoResendeAcao{
+        padding-top: 5rem;
+        padding-left: 7rem;
+        padding-bottom: 2rem;
+        margin: 0;
+        width: 150px;
+        height: 150px;
+    }
+    .diviimgetitcompartilhamento{
+        padding: 0;
+        margin: 0;
+        width: auto;
+        height: auto;
+    }
+    .divCompartilhamento{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .h1compartilhamento{
+        padding-top: 4rem;
+        font-size: 30px;
+        padding-bottom: 2rem;
+    }
+    .imgresponsividade{
+        width: 100%;
+        height: 180px;
+        background-image: url(../images/imgdesktopmobile\ .png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-bottom: 3rem;
+    }
+    .txtCompartilhamento{
+        margin:30px;
+    }
+    .titleMotiv{
+        font-size: 30px;
+        margin-bottom: 20px;
+        padding-top: 10rem;
+    }
+      
+
+    .h1compartilhamento{
+        font-size: 30px;
+    
+    }
+    .imgresponsividade{
+        margin: 0;
+        padding-bottom: 40px;
+        
+        
+    }
+
+    .diviimgetitcompartilhamento{
+    text-align: center;
+    color: white;
+
+
+    }
+    .txtCompartilhamento{
+        margin: 0;
+        padding: 20px;
+    }
+    .H2agradecimento{
+        font-size: 20px;
+    }
+    .logosobfooter{
+        width: 200px;
+        height: 200px;
+    }
+    .h2Integrantes{
+        font-size: 30px;
+    }
+    .divfrontimg{
+        padding: 0;
+        margin: 0;
+    }
+    .divbackimg{
+        padding: 0;
+        margin: 0;
+        height: 100%;
+    }
+    
+    
+        
 
     
  
