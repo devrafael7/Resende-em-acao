@@ -142,7 +142,8 @@ a{
     width: 100%;
     height: 100vh; 
     
-  }
+    
+}
   
   /* Estilos para o vídeo de fundo */
   .videobackground video {
@@ -152,51 +153,27 @@ a{
     width: 100%;
     height: 100%;
     object-fit: cover; 
+    filter: grayscale(100%);
   }
   
   /* Estilos para o conteúdo sobre o vídeo */
   .divTitleTextMotiv {
     position: relative;
     z-index: 1;
-    color: white;
+    color: #f08b2c;
     text-align: center;
     padding: 20px;
+    backdrop-filter: blur(1.5px);
+    
   }
   
   .titleMotiv{
     font-size: 3em;
     margin-bottom: 20px;
     padding-top: 10rem;
-  }
-  
-  .txtMotiv {
-    font-size: 1.5em;
-  }
-
-
-
-
-
-
-
-
-
-
-
-.titMotiv{
-    font-size: 40px;
-    color: #f7835a;
-    padding-top: 8rem;
-
 }
-.txtMotiv{
-    padding-top: 2rem;
-    padding-left: 10rem;
-    padding-right: 10rem;
-    font-size: 20px;
-    color: white;
 
-}
+
 .buttonQueroAjudar{
     padding: 15px;
     border-radius: 20px;
@@ -937,24 +914,6 @@ a{
     .ArticleIntegrantes{
         flex-direction: column;
     }
-    .divBackimgMotiv{
-        width: 100%;
-        background-image: none;
-        background-color: black;
-       
-    }
-    .titMotiv{
-        padding-top: 40px;
-        padding-bottom: 20px;
-       
-    }
-    .txtMotiv{
-        font-size: 20px;
-        padding: 0;
-        margin: 0;
-       
-    
-    }
     .buttonQueroAjudar{
         padding: 0;
         margin-top: 25px;
@@ -1147,10 +1106,6 @@ a{
         padding-top: 10rem;
     }
       
-    .txtMotiv {
-        font-size: 15px;
-    }
-    
 
     .h1compartilhamento{
         font-size: 30px;
@@ -1182,6 +1137,15 @@ a{
     }
     .h2Integrantes{
         font-size: 30px;
+    }
+    .divfrontimg{
+        padding: 0;
+        margin: 0;
+    }
+    .divbackimg{
+        padding: 0;
+        margin: 0;
+        height: 1060px;
     }
     
     
