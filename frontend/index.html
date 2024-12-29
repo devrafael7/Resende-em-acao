@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8, permitindo suporte a caracteres especiais. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura o layout para ser responsivo em dispositivos móveis. -->
-    <link rel="stylesheet" href="frontend/css/style.css"> <!-- Vincula uma folha de estilo externa para customização visual. -->
+    <link rel="stylesheet" href="public/css/style.css">
+
+ <!-- Vincula uma folha de estilo externa para customização visual. -->
     <title>ResendeAção</title> <!-- Define o título da página que aparece na aba do navegador. -->
 </head>
 <body>
@@ -16,17 +18,17 @@
             <div class="popUpFazerLoginFilho">
                 <div class="fecharPopUp">
                     <span>Não, obrigado.</span>
-                    <img src="/frontend/icons/icons8-close-26 (1).png" alt="">
+                    <img src="/public/icons/icons8-close-26 (1).png" alt="">
                 </div>
     
                 <h1>Deseja fazer login agora?</h1>
 
                 <div class="loginButtonAndIcons">
-                    <a class="fazerLoginButton" href="/frontend/templates/login.html">
+                    <a class="fazerLoginButton" href="/public/templates/login.html">
                         Fazer Login
                     </a>
-                    <a href="/frontend/templates/login.html"><img src="/frontend/icons/google.color.png" alt=""></a>
-                    <a href="/frontend/templates/login.html"><img src="/frontend/icons/facebook.color.png" alt=""></a>
+                    <a href="/public/templates/login.html"><img src="/public/icons/google.color.png" alt=""></a>
+                    <a href="/public/templates/login.html"><img src="/public/icons/facebook.color.png" alt=""></a>
                 </div>
            
             </div>
@@ -44,7 +46,7 @@
                 <ul class="menu"> <!-- Lista de navegação para diferentes seções do site -->
                     <li class="itemMenu"><a href="">Home</a></li>
                     <li class="itemMenu"><a href="">Instituições</a></li>
-                    <li class="itemMenu"><a href="frontend/templates/login.html">Login</a></li>
+                    <li class="itemMenu"><a href="/login">Login</a></li>
                     <li class="itemMenu"><a href="">Suporte</a></li>
                     <li class="itemMenu"><a href="#Sobre">Sobre nós</a></li>
                     <a href="">
@@ -53,7 +55,7 @@
                 </ul>
             </header>
 
-            <img src="frontend/icons/logoResendeAção.png" alt="" class="logoResendeAcao">
+            <img src="public/icons/logoResendeAção.png" alt="" class="logoResendeAcao">
 
             <!-- Título principal da página -->
             <h1 class="tit 1" id="Home">Resende em Ação</h1>
@@ -72,7 +74,7 @@
         </div>
         <div class="videobackground">
             <video autoplay muted loop class="videobackgroundvideo">
-              <source src="frontend/video/458472_Walk_Water_1920x1080.mp4" type="video/mp4">
+              <source src="public/video/458472_Walk_Water_1920x1080.mp4" type="video/mp4">
             </video>
             <div class="divTitleTextMotiv">
               <h1 class="titleMotiv">Abençoe a vida de alguém com coisas pequenas!</h1>
@@ -121,28 +123,28 @@
         <!-- Seção de cartões explicativos -->
         <section class="sectionCards">
             <div class="card Card1"> <!-- Cada div representa um cartão com um motivo para doar -->
-                <img src="frontend/images/imgpobreza1.webp" alt="" class="imgCard">
+                <img src="public/images/imgpobreza1.webp" alt="" class="imgCard">
                 <h3 class="titCard">Promover a empatia e cooperação</h3>
                 <p class="txtCard">A motivação para doar pode variar de pessoa para pessoa, mas geralmente está enraizada 
                     em sentimentos de altruísmo, empatia ou solidariedade.</p>
             </div>
             
             <div class="card Card2">
-                <img src="frontend/images/imgpobreza2.jpg" alt="" class="imgCard">
+                <img src="public/images/imgpobreza2.jpg" alt="" class="imgCard">
                 <h3 class="titCard">Suprir necessidades básicas, como acesso à educação, saúde, alimentação</h3>
                 <p class="txtCard">A motivação para doar pode variar de pessoa para pessoa, mas geralmente está enraizada 
                     em sentimentos de altruísmo, empatia ou solidariedade.</p>
             </div>
 
             <div class="card Card3">
-                <img src="frontend/images/imgpobreza3.jpg" alt="" class="imgCard">
+                <img src="public/images/imgpobreza3.jpg" alt="" class="imgCard">
                 <h3 class="titCard">Ajudar a praticar o desapego material</h3>
                 <p class="txtCard">A motivação para doar pode variar de pessoa para pessoa, mas geralmente está enraizada 
                     em sentimentos de altruísmo, empatia ou solidariedade.</p>
             </div>
 
             <div class="card Card4">
-                <img src="frontend/images/pob4.webp" alt="" class="imgCard">
+                <img src="public/images/pob4.webp" alt="" class="imgCard">
                 <h3 class="titCard">Ajudar a praticar o desapego material</h3>
                 <p class="txtCard">A motivação para doar pode variar de pessoa para pessoa, mas geralmente está enraizada 
                     em sentimentos de altruísmo, empatia ou solidariedade.</p>
@@ -159,32 +161,32 @@
         
         <section class="sectionOqDoar">
             <div class="divOptionOQdoar">
-                <img src="frontend/icons/icon_agua_potavel.png" alt="" class="imgOqueDoar">
+                <img src="public/icons/icon_agua_potavel.png" alt="" class="imgOqueDoar">
                 <h6 class="subtitOptionOqDoar">Água</h6>
                 <p class="txtOptionOqDoar">Doe água potável, ajude quem necessita</p>
             </div>
             <div class="divOptionOQdoar">
-                <img src="frontend/icons/food-delivery_3256961.png" alt="" class="imgOqueDoar">
+                <img src="public/icons/food-delivery_3256961.png" alt="" class="imgOqueDoar">
                 <h6 class="subtitOptionOqDoar">Alimentos</h6>
                 <p class="txtOptionOqDoar">Doe alimentos não perecíveis</p>
             </div>
             <div class="divOptionOQdoar">
-                <img src="frontend/icons/pajamas_12692137.png" alt="" class="imgOqueDoar">
+                <img src="public/icons/pajamas_12692137.png" alt="" class="imgOqueDoar">
                 <h6 class="subtitOptionOqDoar">Roupas</h6>
                 <p class="txtOptionOqDoar">Doe roupas, de qualquer idade ou tamanho</p>
             </div>
             <div class="divOptionOQdoar">
-                <img src="frontend/icons/blanket_2452909.png" alt="" class="imgOqueDoar">
+                <img src="public/icons/blanket_2452909.png" alt="" class="imgOqueDoar">
                 <h6 class="subtitOptionOqDoar">Agasalhos</h6>
                 <p class="txtOptionOqDoar">Doe agasalhos, casacos ou cobertores</p>
             </div>
             <div class="divOptionOQdoar">
-                <img src="frontend/icons/toiletries_5114447.png" alt="" class="imgOqueDoar">
+                <img src="public/icons/toiletries_5114447.png" alt="" class="imgOqueDoar">
                 <h6 class="subtitOptionOqDoar">Itens de higiene</h6>
                 <p class="txtOptionOqDoar">Doe produtos de higiene</p>
             </div>
             <div class="divOptionOQdoar">
-                <img src="frontend/icons/toy_5323877.png" alt="" class="imgOqueDoar">
+                <img src="public/icons/toy_5323877.png" alt="" class="imgOqueDoar">
                 <h6 class="subtitOptionOqDoar">Brinquedos</h6>
                 <p class="txtOptionOqDoar">Doe brinquedos, de qualquer tipo</p>
             </div>
@@ -205,7 +207,7 @@
                 <p class="txtInstituicao">Inclusão e respeito — Compromisso sólido com a responsabilidade social e transparência. 
                     Promovendo qualidade de vida com profissionalismo e solidariedade. Junte-se a nós agora. Seja parte do bem. 
                     Faça a diferença hoje. Ajude quem precisa. Serviços: Pessoa Idosa, Pessoa com Deficiência.</p>
-                <button class="buttonInstituicao"><img src="frontend/icons/icons8-right-26.png" alt="" class="iconButtonInstituicao"></button> <!-- Botão com ícone -->
+                <button class="buttonInstituicao"><img src="public/icons/icons8-right-26.png" alt="" class="iconButtonInstituicao"></button> <!-- Botão com ícone -->
             </div>
         </div>
     </div>
@@ -241,9 +243,9 @@
                     <!-- Contêiner para ícones de contato -->
                     <div class="divInconsContatosIntegrantes">
                         <!-- Ícones de redes sociais e email -->
-                        <a href=""><img src="frontend/icons/icons8-linkedin-50.png" alt="" class="iconsIntegrantes"></a>
-                        <a href=""><img src="frontend/icons/icons8-github-50 (1).png" alt="" class="iconsIntegrantes"></a>
-                        <a href=""><img src="frontend/icons/icons8-gmail-novo-50 (1).png" alt="" class="iconsIntegrantes"></a>
+                        <a href=""><img src="public/icons/icons8-linkedin-50.png" alt="" class="iconsIntegrantes"></a>
+                        <a href=""><img src="public/icons/icons8-github-50 (1).png" alt="" class="iconsIntegrantes"></a>
+                        <a href=""><img src="public/icons/icons8-gmail-novo-50 (1).png" alt="" class="iconsIntegrantes"></a>
                     </div>
                 </div>
             </div>
@@ -253,9 +255,9 @@
                     <h4 class="NomeIntegrante">Rafael Marques</h4>
                     <P class="txtIntegrante">Estudante de Engengaria de Software - AEDB</P>
                     <div class="divInconsContatosIntegrantes">
-                        <a href=""><img src="frontend/icons/icons8-linkedin-50.png" alt="" class="iconsIntegrantes"></a>
-                        <a href=""><img src="frontend/icons/icons8-github-50 (1).png" alt="" class="iconsIntegrantes"></a>
-                        <a href=""><img src="frontend/icons/icons8-gmail-novo-50 (1).png" alt="" class="iconsIntegrantes"></a>
+                        <a href=""><img src="public/icons/icons8-linkedin-50.png" alt="" class="iconsIntegrantes"></a>
+                        <a href=""><img src="public/icons/icons8-github-50 (1).png" alt="" class="iconsIntegrantes"></a>
+                        <a href=""><img src="public/icons/icons8-gmail-novo-50 (1).png" alt="" class="iconsIntegrantes"></a>
                     </div>
                 </div>
             </div>
@@ -265,9 +267,9 @@
                     <h4 class="NomeIntegrante">Italo Braga</h4>
                     <P class="txtIntegrante">Estudante de Engengaria de Software- AEDB</P>
                     <div class="divInconsContatosIntegrantes">
-                        <a href=""><img src="frontend/icons/icons8-linkedin-50.png" alt="" class="iconsIntegrantes"></a>
-                        <a href=""><img src="frontend/icons/icons8-github-50 (1).png" alt="" class="iconsIntegrantes"></a>
-                        <a href=""><img src="frontend/icons/icons8-gmail-novo-50 (1).png" alt="" class="iconsIntegrantes"></a>
+                        <a href=""><img src="public/icons/icons8-linkedin-50.png" alt="" class="iconsIntegrantes"></a>
+                        <a href=""><img src="public/icons/icons8-github-50 (1).png" alt="" class="iconsIntegrantes"></a>
+                        <a href=""><img src="public/icons/icons8-gmail-novo-50 (1).png" alt="" class="iconsIntegrantes"></a>
                     </div>
                 </div>
             </div>
@@ -277,9 +279,9 @@
                     <h4 class="NomeIntegrante">Samuel Magno</h4>
                     <P class="txtIntegrante">Estudante de Sistemas da Informação - AEDB</P>
                     <div class="divInconsContatosIntegrantes">
-                        <a href=""><img src="frontend/icons/icons8-linkedin-50.png" alt="" class="iconsIntegrantes"></a>
-                        <a href=""><img src="frontend/icons/icons8-github-50 (1).png" alt="" class="iconsIntegrantes"></a>
-                        <a href=""><img src="frontend/icons/icons8-gmail-novo-50 (1).png" alt="" class="iconsIntegrantes"></a>
+                        <a href=""><img src="public/icons/icons8-linkedin-50.png" alt="" class="iconsIntegrantes"></a>
+                        <a href=""><img src="public/icons/icons8-github-50 (1).png" alt="" class="iconsIntegrantes"></a>
+                        <a href=""><img src="public/icons/icons8-gmail-novo-50 (1).png" alt="" class="iconsIntegrantes"></a>
                     </div>
                 </div>
             </div>
@@ -289,9 +291,9 @@
                     <h4 class="NomeIntegrante">Felipe Azevedo</h4>
                     <P class="txtIntegrante">Estudante de Engengaria de Software - AEDB</P>
                     <div class="divInconsContatosIntegrantes">
-                        <a href=""><img src="frontend/icons/icons8-linkedin-50.png" alt="" class="iconsIntegrantes"></a>
-                        <a href=""><img src="frontend/icons/icons8-github-50 (1).png" alt="" class="iconsIntegrantes"></a>
-                        <a href=""><img src="frontend/icons/icons8-gmail-novo-50 (1).png" alt="" class="iconsIntegrantes"></a>
+                        <a href=""><img src="public/icons/icons8-linkedin-50.png" alt="" class="iconsIntegrantes"></a>
+                        <a href=""><img src="public/icons/icons8-github-50 (1).png" alt="" class="iconsIntegrantes"></a>
+                        <a href=""><img src="public/icons/icons8-gmail-novo-50 (1).png" alt="" class="iconsIntegrantes"></a>
                     </div>
                 </div>
             </div>
@@ -300,7 +302,7 @@
         <div class="divLinhasobFooter"></div>
         <div>
             <h2 class="H2agradecimento"> Equipe Resende em Ação agradece!</h2>
-            <img src="frontend/icons/logoResendeAção.png" alt="" class="logosobfooter">
+            <img src="public/icons/logoResendeAção.png" alt="" class="logosobfooter">
         </div>
         <div class="divLinhasobFooter"></div>
 
@@ -311,7 +313,7 @@
             <ul class="footerUL">
                     <li class="itemFooterMenu"><a href="#Home">Home</a></li>
                     <li class="itemFooterMenu"><a href="#Instituicao">Instituições</a></li>
-                    <li class="itemFooterMenu"><a href="frontend/templates/sign_up.html">Login</a></li>
+                    <li class="itemFooterMenu"><a href="public/templates/sign_up.html">Login</a></li>
                     <li class="itemFooterMenu"><a href="">Suporte</a></li>
                     <li class="itemFooterMenu"><a href="#Sobre">Sobre nós</a></li>
             </ul>
@@ -392,6 +394,6 @@
     </footer>
 
 
-    <script src="/frontend/js/front.js"></script>
+    <script src="/public/js/front.js"></script>
 </body>
 </html>
