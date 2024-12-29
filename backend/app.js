@@ -43,6 +43,7 @@ passport.deserializeUser((user, callback) => {
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '..', 'frontend'));
 
+app.use('/frontend', express.static(path.join(__dirname, '..', 'frontend')));
 app.use('/public', express.static(path.join(__dirname, '..', 'frontend', 'public')));
 
 app.use(expressSession({
@@ -68,7 +69,7 @@ app.get('/facebook', passport.authenticate('facebook'), (req, res) => {
 
 app.get('/', (req, res) => {
     // Envie o arquivo index.html da pasta frontend
-    res.sendFile(path.join(__dirname, '..', 'frontend', 'index.html'));
+    res.sendFile(path.join(__dirname, '..', 'index.html'));
 });
 
 app.get('/login', (req, res) => {
