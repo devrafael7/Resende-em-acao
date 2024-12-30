@@ -463,18 +463,15 @@ a{
 }
 
 .divCompartilhamento{
-    display: grid;
     background-image: url(../images/child-5445463_1920.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 700px;
+    height: auto;
     text-align: center;
     padding-top: 5rem;
     padding-bottom: 5rem;
     filter: grayscale(0%);  
-    align-items: center;
-    justify-content: center;
     margin-top: 30px;
     
 
@@ -485,13 +482,9 @@ a{
     text-align: center;
 }
 .imgresponsividade{
-    width: 800px;
-    height: 430px;
-    background-image: url(../images/imgdesktopmobile\ .png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 20px;
-    margin-left: 33rem;
+    width: 600px;
+    height: auto;
+    
     
     
 }
@@ -499,6 +492,10 @@ a{
 .diviimgetitcompartilhamento{
    text-align: center;
    color: white;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
 
 
 }
@@ -982,7 +979,7 @@ a{
     }
     .divDadosBrasil{ 
         text-align: center;
-        width: 300px;
+        width: 100%;
         height: 300px;
         padding: 0;
         margin-right: 15px;
@@ -1128,24 +1125,29 @@ a{
         margin: 0;
         width: auto;
         height: auto;
+        
     }
     .divCompartilhamento{
         width: 100%;
         padding: 0;
         margin: 0;
+        
+        
     }
     .h1compartilhamento{
         padding-top: 4rem;
         font-size: 30px;
         padding-bottom: 2rem;
     }
-    .imgresponsividade{
-        width: 100%;
-        height: 180px;
-        background-image: url(../images/imgdesktopmobile\ .png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        padding-bottom: 3rem;
+
+    .imgIMGresponsividade{
+        width: 420px;
+        margin: 0;
+        padding: 0;
+        
+        
+        
+
     }
     .txtCompartilhamento{
         margin:30px;
