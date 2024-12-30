@@ -54,7 +54,7 @@ body{
     bottom: -5%;
     width: 0;
     height: 1px;
-    background-color: #f7835a;
+    background-color: #007bff;
     transition: 0.3s ease;
 }
 .itemMenu:hover::after{
@@ -62,7 +62,7 @@ body{
 }
 /* aumenta o tamanho e troca a cor ao passar o cursor */
 .itemMenu:hover{
-    color: #f7835a;
+    color: #007bff;
     transform: scale(1.2);
 }
 
@@ -79,13 +79,14 @@ a{
     margin-top: 7px;
     margin-right: 25px;
     padding: 8px;
-    background-color: #f7835a;
+    background-color: #003e80;
     color: white;
     border: none;
     font-size: 15px;
+    transition: 0.5s ease;
 }
 .buttonDoeAgoraHeader:hover{
-    background-color: #f08b2c;
+    background-color: #00B3E3;
     transform: scale(1.1);
 
 }
@@ -96,7 +97,7 @@ a{
     justify-content: center;
     position: fixed;
     height: 50px;
-    background-color: #f7845a14;
+    background-color: #3330ff23;
     backdrop-filter: blur(5px);
     z-index: 1000;
     
@@ -128,7 +129,7 @@ a{
 }
 /* Botão estilizado com bordas arredondadas e cores para o estado padrão. */
 .button1{
-    background-color: #f7835a;
+    background-color: #003e80;
     color: white;
     border: none;
     border-radius: 50px;
@@ -144,7 +145,7 @@ a{
 /* aumenta o tamanho e troca a cor ao passar o cursor */
 .button1:hover{
     transform: scale(1.2);
-    background-color: #f08b2c;
+    background-color: #00B3E3;
 }
 
 
@@ -160,7 +161,7 @@ a{
 }
   
   /* Estilos para o vídeo de fundo */
-  .videobackground video {
+.videobackground video {
     position: absolute;
     top: 0;
     left: 0;
@@ -168,23 +169,34 @@ a{
     height: 100%;
     object-fit: cover; 
     filter: grayscale(100%);
-  }
+}
   
   /* Estilos para o conteúdo sobre o vídeo */
-  .divTitleTextMotiv {
+.divTitleTextMotiv {
     position: relative;
     z-index: 1;
-    color: #f08b2c;
+    color: white;
     text-align: center;
     padding: 20px;
-    backdrop-filter: blur(1.5px);
+    backdrop-filter: blur(2px);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
     
-  }
+}
   
-  .titleMotiv{
+.titleMotiv{
     font-size: 3em;
     margin-bottom: 20px;
     padding-top: 10rem;
+
+}
+.txtMotiv{
+    width: 500px;
 }
 
 
@@ -192,22 +204,31 @@ a{
     padding: 15px;
     border-radius: 20px;
     margin-top: 5rem;
-    background-color: #f7835a;
+    background-color: #003e80;
     transition: 0.5s ease;
     cursor: pointer;
     border: none;
+    color: white;
     
 
 }
 .buttonQueroAjudar:hover{
-    background-color: #f08b2c;
+    background-color: #00B3E3;
     transform: scale(1.2);
 }
 
 .articleDadosBrasil{
     width: 100%;
-    height: 400px;
+    height: auto;
     background:linear-gradient(black,black,#222222);
+    padding-bottom: 5rem;
+    
+
+}
+.titDadosBrasil{
+    color: white;
+    font-size: 40px;
+    text-align: center;
     
 
 }
@@ -216,6 +237,8 @@ a{
     align-items: center;
     justify-content: center;
     padding-left: 70px;
+    flex-wrap: wrap;
+    height: auto;
 
 }
 .divDadosBrasil{ 
@@ -230,6 +253,11 @@ a{
     margin-top: 5rem;
 
 }
+.Dados1{ filter: grayscale(25%);}
+.Dados2{ filter: grayscale(50%);}
+.Dados3{ filter: grayscale(75%);}
+.Dados4{ filter: grayscale(100%);}
+
 .divDadosBrasil:hover{
     transform: translateY(-10%);
 }
@@ -249,6 +277,27 @@ a{
     
 
 }
+.txtafterDados{
+    color: #f9f9f9;
+    width: 300px;
+    padding-left: 40px;
+}
+.txtdados1{
+    padding-top: 180px;
+
+}
+.txtdados2{
+    padding-top: 180px;
+
+}
+.txtdados3{
+    padding-top: 158px;
+
+}
+.txtdados4{
+    padding-top: 180px;
+
+}
 
 
 /* Estilo do botão ao passar o mouse, com alteração da cor de fundo. */
@@ -256,7 +305,7 @@ a{
     padding-bottom: 200px;
     width: 100%;
     height: auto;
-    background:linear-gradient(#222222,#f7835a, #000E17);
+    background:linear-gradient(#222222,#003e80, #ffffff);
 
 }
 /* Seção "Por que doar?" com fundo escuro e espaçamento inferior. */
@@ -276,10 +325,7 @@ a{
     transition: 0.5s ease;
 }
 /* aumenta o tamanho e troca a cor ao passar o cursor */
-.card:hover{
-    background-color: #ffffff44;
-    transform: scale(1.1);
-}
+
 .imgCard{
     width: 100%;
 }
@@ -295,8 +341,8 @@ a{
 }
 
 .divLinhasobOndeDoar{
-    box-shadow: 0px 0px 110px 20px black;
-    background-color: black;
+    box-shadow: 0px 0px 110px 20px #00B3E3;
+    background-color: #8f8f8f;
     width: 100%;
     height: 2px;
 }
@@ -309,30 +355,31 @@ a{
 }
 /* Estilo do texto explicativo na seção "Onde doar?". */
 .h1OndeDoar{
-    color: #f7835a;
+    color: #ffffff;
     padding-top: 200px;
     font-size: 80px;
 
 }
 /* Estilo do texto explicativo na seção "Onde doar?". */
 .txtOndeDoar{
-    color: #ffffff;
+    color: #00B3E3;
     padding: 90px;
     font-size: 20px;
 }
 
 .articleOqueDoar{
-    background-color: #000E17;
+    background-color: white;
 }
 
 .DivsubTitOqueDoar{
-    color: white;
+   
+    color: #00B3E3;
     text-align: center;
     padding-top: 30px;
 
 }
 .TitOqueDoar{
-    color: white;
+    color: #00B3E3;
     font-size: 40px;
     padding-top: 50px;
 
@@ -354,6 +401,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     
 }
 
@@ -383,20 +431,57 @@ a{
 
 .subtitOptionOqDoar{
     font-size: 15px;
-    color: white;
+    color: #003e80;
     transition: 0.5s ease;
 
 }
 .subtitOptionOqDoar:hover{
-   color: #f7835a;
+   color: #00B3E3;
     transform: scale(1.2);
 
 }
-.txtOptionOqDoar{
+.divPaiOndeDoarInfo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+}
+.divOndeDoarInfo{
+    width: 300px;
+    height: auto;
+    background: linear-gradient(#ffffff,#00B3E3);
+    margin: 15px;
+    border-radius: 20px;
+}
+.titinstrucoes{
     color: white;
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+.titledivInstrucoes{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.txtInstrucoes{
+    margin: 2rem;
+}
+.txtOptionOqDoar{
+    color: #003e80;
     padding-top: 20px;
     font-size: 13px;
 
+}
+.divTitleGifOndeDoar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imgGifInterrogacao{
+    width: 120px;
+    height: 100px;
 }
 
 
@@ -412,21 +497,18 @@ a{
 }
 /* Div com imagem de fundo para a seção de instituições. */
 .divImageBackInstituicao{
-    width: 95%;
+    width: 100%;
     height: 700px;
     background-image: url(../images/altosurubi1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    margin-left: 40px;
-    border-radius: 40px;
-
 }
 /* Sobreposição escura semitransparente na seção de instituições. */
 .divBackOpacidade{
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.562);
-    border-radius: 40px;
+    
     
     
 }
@@ -463,7 +545,8 @@ a{
 }
 
 .divCompartilhamento{
-    background-image: url(../images/child-5445463_1920.jpg);
+    display: grid;
+    background-color: #000E17;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -472,7 +555,9 @@ a{
     padding-top: 5rem;
     padding-bottom: 5rem;
     filter: grayscale(0%);  
-    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    
     
 
 }
@@ -482,23 +567,26 @@ a{
     text-align: center;
 }
 .imgresponsividade{
-    width: 600px;
-    height: auto;
+    width: 800px;
+    height: 430px;
+    background-image: url(../images/imgdesktopmobile\ .png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
     
     
     
 }
 
 .diviimgetitcompartilhamento{
-   text-align: center;
-   color: white;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-
-
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
 .txtCompartilhamento{
     padding-left: 10rem;
     padding-right:10rem;
@@ -507,7 +595,7 @@ a{
 
 /* Estilo para a seção de integrantes */
 .sectionIntegrantes{
-    background: linear-gradient(#f7835a,#f9f9f9, #f08b2c);
+    background: linear-gradient(#000E17,#f9f9f9,#00B3E3);
     width: 100%;
     height: auto;
     text-align: center;
@@ -617,7 +705,7 @@ a{
 }
 /* Estilo para o texto descritivo do integrante */
 .txtIntegrante{
-    color: #f7835a;
+    color: #007bff;
     margin: 5px;
     font-size: 15px;
 }
@@ -670,10 +758,14 @@ a{
     width: 300px;
     height: 300px;
 }
+.divBackagradecimento{
+    width: 100%;
+    height: 500px;
+}
 .AbaFooter{
     padding-top: 2rem;
     display: flex;
-    background: linear-gradient(#f08b2c,#f7835a);
+    background: linear-gradient(#00B3E3,#212D34);
     width: 100%;
     height: auto;
     color: rgba(255, 255, 255, 0.667);
@@ -708,7 +800,7 @@ a{
     
 }
 .itemFooterMenu:hover{
-    color: #f74316;
+    color: #00B3E3;
     transform: scale(1.1);
 }
 
@@ -732,7 +824,7 @@ a{
 
 }
 .itemFooterIntegrantes:hover{
-    color: #f74316;
+    color: #00B3E3;
     transform: scale(1.1);
 }
 
@@ -764,7 +856,7 @@ a{
 }
 
 .itemFooterMapaSite:hover{
-    color: #f74316;
+    color: #00B3E3;
     transform: scale(1.1);
 }
 
@@ -780,18 +872,26 @@ a{
     padding-right: 30px;
 }
 .Fdireitosreservados{
-    background-color: #f7835a;
+    background-color: #212D34;
     height: 40px;
     width: 100%;
     text-align: center;
     padding-top: 12px;
     color: white;
 }
+.divgifonda{
+    width: 100%;
+    height: 50px;
+}
+.imgGIFonda{
+    width: 100%;
+    height: 150px;
+}
 
 
 
 /* Ajustando responsividade para mobile*/
-@media  (max-width: 768px) {
+@media  (max-width: 800px) {
     
     .buttonDoeAgoraHeader{
         all: unset;
@@ -955,9 +1055,15 @@ a{
     }
     .sectionIntegrantes{
         height: auto;
+        
     }
     .ArticleIntegrantes{
-        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        
+        
     }
     .buttonQueroAjudar{
         padding: 0;
@@ -979,19 +1085,20 @@ a{
     }
     .divDadosBrasil{ 
         text-align: center;
-        width: 100%;
+        width: 300px;
         height: 300px;
         padding: 0;
-        margin-right: 15px;
+        
         margin-top: 0;
-        margin-bottom: 0;
+        margin-bottom: 100px;
       
     }
     
     .titDadosBrasil{
         font-size: 20px;
         padding: 0;
-        margin-top: 50px;
+        padding-top: 50px;
+       
 
      
     }
@@ -1125,32 +1232,28 @@ a{
         margin: 0;
         width: auto;
         height: auto;
-        
     }
     .divCompartilhamento{
         width: 100%;
         padding: 0;
         margin: 0;
-        
-        
     }
     .h1compartilhamento{
         padding-top: 4rem;
         font-size: 30px;
         padding-bottom: 2rem;
     }
-
-    .imgIMGresponsividade{
-        width: 420px;
-        margin: 0;
-        padding: 0;
-        
-        
-        
-
+    .imgresponsividade{
+        width: 90%;
+        height: 180px;
+        background-image: url(../images/imgdesktopmobile\ .png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-bottom: 3rem;
     }
     .txtCompartilhamento{
-        margin:30px;
+        margin: 0;
+        padding: 20px;
     }
     .titleMotiv{
         font-size: 30px;
@@ -1176,10 +1279,7 @@ a{
 
 
     }
-    .txtCompartilhamento{
-        margin: 0;
-        padding: 20px;
-    }
+    
     .H2agradecimento{
         font-size: 20px;
     }
@@ -1202,6 +1302,16 @@ a{
     .h2Integrantes{
         font: 5px;
     }
+    .txtMotiv{
+        width: 90%;
+        padding: 15px;
+    }
+    .imgGifInterrogacao{
+        transform: scale(0.5);
+    }
+    .h1OndeDoar{
+        font-size: 30px;
+    }
     
     
         
@@ -1210,7 +1320,7 @@ a{
  
 }
 /* Ajustando responsividade para tablet */
-@media  (max-width: 1024px){
+@media  (min-width:800px) and (max-width: 1280px){
 
     .sectionCards{
         flex-wrap: wrap;
@@ -1234,8 +1344,52 @@ a{
         font-size: 15px;
 
     }
+    .diviimgetitcompartilhamento{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .imgresponsividade{
+        width: 100%;
+        height: 425px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .ArticleIntegrantes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        
+    }
+    .logoResendeAcao{
+        padding-left: 18rem;
+    }
+
 
 } 
+@media (min-width: 1280px) and (max-width: 1500px){
+   
+
+    .diviimgetitcompartilhamento{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .imgresponsividade{
+        width: 80%;
+        height: 600px;
+        
+
+    }
+    
+    
+
+}
+    
 
 /* Criação do Pop-up de Login opcional no index 
 
