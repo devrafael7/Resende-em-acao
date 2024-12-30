@@ -5,13 +5,8 @@
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
-    
-    
+}
 
-}
-body{
-    
-}
 /* Div principal que define a imagem de fundo para a seção inicial. */
 .divfrontimg{
     background-image: url(../images/altosurubi1.jpg);
@@ -244,7 +239,7 @@ a{
 .divDadosBrasil{ 
     width: 400px;
     height: 400px;
-    background-image: url(../icons/map.png);
+    background-image: url(..//icons/map.png);
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
@@ -648,27 +643,27 @@ a{
     
 }
 .integrante1{
-    background-image: url(/frontend/images/imgIntegrantes/gilianphoto.jpg);
+    background-image: url(../images/imgIntegrantes/gilianphoto.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 
 }
 .integrante2{
-    background-image: url(/frontend/images/imgIntegrantes/faelphoto.jpg);
+    background-image: url(../images/imgIntegrantes/faelphoto.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 
 
 }
 .integrante3{
-    background-image: url(/frontend/images/imgIntegrantes/photoitalo.jpg);
+    background-image: url(../images/imgIntegrantes/photoitalo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 
 
 }
 .integrante4{
-    background-image: url(/frontend/images/imgIntegrantes/samuelphoto.jpg);
+    background-image: url(../images/imgIntegrantes/samuelphoto.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 
