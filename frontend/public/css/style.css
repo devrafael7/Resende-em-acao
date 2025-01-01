@@ -500,15 +500,19 @@ a{
     overflow: hidden;
     object-fit: cover;
 
-        & input{display: none;}
+        & input{ display: none;}
 }
 .instituicoesSlides{
     width: 100%;
     position: relative;
     transition: 2s ease;
-    & img{ width: auto;
+    
+}
+.instituicoesSlides img{
+        
+        width: auto;
         height: 700px;
-    }
+
 }
 .manualNavigation{
     position: absolute;
@@ -579,8 +583,9 @@ a{
     font-size: 50px;
     padding-top: 0px;
     padding-left: 0px;
+    margin: 0;
     position: absolute;
-    z-index: 1;
+    z-index: 10;
 }
 /* Estilo do texto explicativo na seção "Instituição". */
 .txtInstituicao{
@@ -1393,6 +1398,35 @@ a{
     .h1OndeDoar{
         font-size: 30px;
     }
+    .divcolorBackInstituicao{
+        background-color: #000E17;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    
+    .divImageBackInstituicao{
+        width: auto;
+        height: auto;
+        object-fit: cover;
+       
+    }
+    .instituicoesSlides img{
+        width: 400px;
+        height: 100%;
+            
+          
+
+    }
+    .h1Instituicao{
+        font-size: 25px;
+    }
+    .manual-btn{
+        margin-top: 20px;
+    }
+    .manual-btn:not(:last-child){
+        margin-right: 10px;
+    }
     
     
         
@@ -1448,7 +1482,28 @@ a{
     .logoResendeAcao{
         padding-left: 18rem;
     }
+    .divcolorBackInstituicao{
+        background-color: #000E17;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    
+    .divImageBackInstituicao{
+        width: auto;
+        height: auto;
+        object-fit: cover;
+       
+    }
+    .instituicoesSlides img{
+        width: auto;
+        height: 100%;
+            
+          
 
+    }
+    
+ 
 
 } 
 @media (min-width: 1280px) and (max-width: 1500px){
@@ -1465,6 +1520,31 @@ a{
         height: 600px;
         
 
+    }
+    .divcolorBackInstituicao{
+        background-color: #000E17;
+        width: auto;
+        height: auto;
+        object-fit: cover;
+        background-color: #000E17;
+    }
+    
+    .divImageBackInstituicao{
+        width: auto;
+        height: auto;
+        object-fit: cover;
+       
+    }
+    .instituicoesSlides img{
+        width: 1406px;
+        height: 100%;
+            
+          
+
+    }
+    
+    .divIntegrante:not(:last-child){
+        margin-left: 50px;
     }
     
     
