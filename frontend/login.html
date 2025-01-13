@@ -14,7 +14,7 @@
         <div class="form-container sign-up">
             
 
-            <form class="loginForm signUpForm">
+            <form class="loginForm signUpForm" action="/manual_login" method="POST">
                 <div class="circuloLaranja">
                     <div class="circuloLaranjaPequeno">
 
@@ -29,17 +29,17 @@
                 <span>ou use seu e-mail para se registrar</span>
                 <div class="inputDiv">
                     <img src="public/icons/icons8-usuário-30 (1).png" alt="">
-                    <input required type="text" placeholder="Name">
+                    <input required type="text" placeholder="Name" name="user_name">
                 </div>
 
                 <div class="inputDiv">
                     <img src="public/icons/icons8-gmail-logo-50.png" alt="">
-                    <input required type="email" placeholder="Email">
+                    <input required type="email" placeholder="Email" name="user_email">
                 </div>
 
                 <div class="inputDiv">
                     <img src="public/icons/icons8-trancar-50.png" alt="">
-                    <input required type="password" placeholder="Password">
+                    <input required type="password" placeholder="Password" name="user_password">
                 </div>
 
                 <div class="alreadyHaveAccountDiv">Já possui uma conta? Entrar </div>
@@ -60,7 +60,7 @@
         </div>
         <div class="form-container sign-in">
         
-            <form class="loginForm signInForm">
+            <form class="loginForm signInForm" action="/manual_login" method="POST">
 
                 <div class="circuloLaranja">
                     <div class="circuloLaranjaPequeno">
@@ -77,12 +77,12 @@
 
                 <div class="inputDiv">
                     <img src="public/icons/icons8-gmail-logo-50.png" alt="">
-                    <input required type="email" placeholder="Email">
+                    <input required type="email" placeholder="Email" name="user_email">
                 </div>
 
                 <div class="inputDiv">
                     <img src="public/icons/icons8-trancar-50.png" alt="">
-                    <input required type="password" placeholder="Password">
+                    <input required type="password" placeholder="Password" name="user_password">
                 </div>
 
                 <div class="dontHaveAccountDiv">Não possui uma conta? Criar conta</div>

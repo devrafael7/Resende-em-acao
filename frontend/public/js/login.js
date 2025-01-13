@@ -24,29 +24,3 @@ alreadyHaveAccountDiv.addEventListener('click', ()=> {
     container.classList.remove('active')
     signUp.classList.add('hiddenItem')
 })
-
-const signUpForm = document.querySelector('.signUpForm')
-const signInForm = document.querySelector('.signInForm')
-
-const loginForm = document.querySelectorAll('.loginForm')
-
-const wholeLoadingDiv = document.querySelector('.wholeLoadingDiv')
-
-loginForm.forEach( loginForms => {
-    loginForms.addEventListener('submit', (event)=> {
-        event.preventDefault()
-
-        wholeLoadingDiv.style.display = "flex"
-
-        setTimeout( ()=> {
-            wholeLoadingDiv.style.display = "none"
-            signInForm.submit()
-        },1700)
-    })
-})
-
-document.querySelectorAll('form').forEach(form => {
-    form.action = "https://devrafael7.github.io/Resende-em-acao/";
-  });
-  
-

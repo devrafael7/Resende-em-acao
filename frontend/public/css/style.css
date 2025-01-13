@@ -1808,3 +1808,16 @@ a{
 }
 
 */
+
+
+.userPicture {
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 50rem;
+}
+
+.userPicture img{
+    border-radius: 50rem;
+    width: 2.5rem;
+    height: 2.5rem;
+}
