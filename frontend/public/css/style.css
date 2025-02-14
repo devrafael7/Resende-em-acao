@@ -255,6 +255,7 @@ a{
 
 .divDadosBrasil:hover{
     transform: translateY(-10%);
+    z-index: 10;
 }
 
 .titDadosBrasil{
