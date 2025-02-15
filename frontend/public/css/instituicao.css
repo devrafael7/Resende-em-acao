@@ -5,6 +5,11 @@
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    height: auto;
 }
 .menu{
     width: 100%;
@@ -80,3 +85,36 @@ a{
     
 }
 
+.article-instituicao{
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 80vh;
+}
+.div-img-iframe{
+    width: 50%;
+    background-color: #003e80;
+    height: 100%;
+
+}
+.img-instituicao{
+
+}
+.iframe-instituicao{
+
+}
+.div-info-instituicao{
+    width: 50%;
+    background-color: #3e8000;
+    height: 100%;
+    text-align: center;
+
+}
+
+.tit-instituicao{
+
+}
+
+.txt-instituicao{
+
+}
