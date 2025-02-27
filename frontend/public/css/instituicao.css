@@ -8,6 +8,7 @@
     scroll-behavior: smooth;
 }
 body{
+    background-color: white;
     width: 100%;
     height: auto;
 }
@@ -87,34 +88,47 @@ a{
 
 .article-instituicao{
     display: flex;
-    background-color: black;
+    background-color: white;
     width: 100%;
-    height: 80vh;
+    height: auto;
+    padding-top: 3.2rem;
+    text-align: left;
+    color: white;
 }
 .div-img-iframe{
-    width: 50%;
+    width: 60%;
     background-color: #003e80;
     height: 100%;
 
 }
 .img-instituicao{
+    width: 100%;
+    height: auto;
 
 }
 .iframe-instituicao{
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+   
 
 }
 .div-info-instituicao{
-    width: 50%;
-    background-color: #3e8000;
-    height: 100%;
-    text-align: center;
+    width: 40%;
+    background-color: #027ea3;
+    height: auto;
+    
 
 }
 
 .tit-instituicao{
+    margin-top: 50px;
+    margin-left: 30px;
 
 }
 
 .txt-instituicao{
+    margin-top: 30px;
+    margin-left: 30px;
 
 }
