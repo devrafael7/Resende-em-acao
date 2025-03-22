@@ -86,35 +86,107 @@ a{
 }
 
 .article-instituicao{
-    display: flex;
-    background-color: black;
+    background-color: rgb(248, 254, 255);
     width: 100%;
-    height: 80vh;
+    height: 100vh;
+    max-height: 100vh;
+    box-sizing: content-box;
+    display: flex;
+    justify-content: space-between;
 }
-.div-img-iframe{
-    width: 50%;
-    background-color: #003e80;
-    height: 100%;
+.division{
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-img-instituicao img{
+    width: 500px;
+    height: auto;
+    animation: shadow-drop-bl 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    transition: 0.5s ease;
 
 }
-.img-instituicao{
+.div-img-instituicao img:hover{
+    transform: scale(1.2);
 
 }
-.iframe-instituicao{
-
+.div-iframe-google-instituicao iframe{
+    width: 500px;
+    height: 300px;
+    border: none;
+    animation: shadow-drop-bl 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
+
+@keyframes shadow-drop-bl {
+    0% {
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      box-shadow: -12px 12px 20px -12px rgba(0, 0, 0, 0.719);
+    }
+  }
+  
+
 .div-info-instituicao{
-    width: 50%;
-    background-color: #3e8000;
-    height: 100%;
+    width: 30%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.div-info-instituicao h1{
+    font-size: 50px;
     text-align: center;
+    margin: 20px;
+}
+.icons-oq-doar{
+    display: flex;
+    width: auto;
+    height: auto;
+}
+.icon{
+    margin: 10px;
+    width: 48px;
+    height: 48px;
+}
+.info-slide{
+    width: 25%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
 }
-
-.tit-instituicao{
+.info-slide a:hover{
+    color: red;
 
 }
+.div-button-instituicao{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-.txt-instituicao{
-
+}
+.btn-doarAgora-instituicao{
+    border-style: none;
+    background-color: #00B3E3;
+    padding: 15px;
+    border-radius: 20px;
+    transition: 1s;
+    font-size: 15px;
+    cursor: pointer;
+}
+.btn-doarAgora-instituicao:hover{
+    transform: scale(1.2);
+    background-color: #007bff;
+    color: white;
 }
