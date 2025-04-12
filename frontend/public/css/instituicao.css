@@ -89,7 +89,7 @@ a{
 }
 
 .article-instituicao{
-    background-image: url(/frontend/public/images/circle_blue.png);
+    background-image: url(/Resende-em-acao/frontend/public/images/circle_blue.png);
      background-size: cover;
     width: 100%;
     height: auto;
@@ -97,6 +97,7 @@ a{
     box-sizing: content-box;
     display: flex;
     justify-content: space-between;
+    padding: 5rem 0rem;
     
 }
 .TxtSlide img{
@@ -261,6 +262,9 @@ a{
         height: auto;
         margin-top: 5rem;
     }
+    .div-img-instituicao img:hover{
+        transform: scale(1);
+    }
 
     .div-img-instituicao iframe{
         width: 90%;
@@ -314,4 +318,3 @@ a{
 
 
  }
-
