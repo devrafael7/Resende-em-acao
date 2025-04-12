@@ -242,6 +242,7 @@ a{
     .article-instituicao{
         display: grid;
         height: auto;
+        overflow-x: hidden;
     }
     .div-info-instituicao{
         width: 80%;
