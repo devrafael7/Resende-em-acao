@@ -48,7 +48,7 @@
     left: 0;
     bottom: -5%;
     width: 0;
-    height: 1px;
+    height: 1.7px;
     background-color: #007bff;
     transition: 0.3s ease;
 }
@@ -56,9 +56,10 @@
     width: 100%;
 }
 /* aumenta o tamanho e troca a cor ao passar o cursor */
+
 .itemMenu:hover{
-    color: #007bff;
-    transform: scale(1.2);
+    color: #2287f4;
+    transform: scale(1.01);
 }
 
 /* Remove o estilo padrão dos links e define o cursor como clicável. */
@@ -81,8 +82,8 @@ a{
     transition: 0.5s ease;
 }
 .buttonDoeAgoraHeader:hover{
-    background-color: #00B3E3;
-    transform: scale(1.1);
+    background-color: #16219e;
+    transform: scale(1.03);
 
 }
 /* Cabeçalho fixo no topo da página com fundo transparente. */
@@ -108,15 +109,15 @@ a{
 /* Títulos grandes com alinhamento e espaçamento para destaque. */
 .tit{
     padding-left: 70px;
-    color: white;
-    font-size: 90px;
+    color: rgba(255, 255, 255, 0.847);
+    font-size: 70px;
     display: flex;
     position: relative;
     align-items: center;
 }
 /* Estilo para textos explicativos com espaçamento e largura definidos. */
 .txt{
-    font-size: 17px;
+    font-size: 16px;
     padding-top: 40px;
     padding-left: 70px;
     color: white;
@@ -128,19 +129,19 @@ a{
     color: white;
     border: none;
     border-radius: 50px;
-    padding: 15px 30px;
+    padding: 12px 30px;
     font-size: 16px;
     cursor: pointer;
     margin-left: 70px;
-    margin-top: 100px;
+    margin-top: 60px;
     margin-bottom: 320px;
     transition: 0.5s ease;
 
 }
 /* aumenta o tamanho e troca a cor ao passar o cursor */
 .button1:hover{
-    transform: scale(1.2);
-    background-color: #00B3E3;
+    transform: scale(1.05);
+    background-color: #19056c;
 }
 
 
@@ -170,7 +171,7 @@ a{
 .divTitleTextMotiv {
     position: relative;
     z-index: 1;
-    color: white;
+    color: rgba(255, 255, 255, 0.818);
     text-align: center;
     padding: 20px;
     backdrop-filter: blur(2px);
@@ -180,8 +181,10 @@ a{
     align-items: center;
     justify-content: center;
     height: 100%;
+}
 
-    
+.divTitleTextMotiv h1{
+    color: #f6892fd0;
 }
   
 .titleMotiv{
@@ -196,20 +199,19 @@ a{
 
 
 .buttonQueroAjudar{
-    padding: 15px;
+    padding: 12px;
     border-radius: 20px;
     margin-top: 5rem;
-    background-color: #003e80;
+    background-color: #e56139ec;
     transition: 0.5s ease;
     cursor: pointer;
     border: none;
     color: white;
-    
-
 }
+
 .buttonQueroAjudar:hover{
-    background-color: #00B3E3;
-    transform: scale(1.2);
+    background-color: #ec4918ec;
+    transform: scale(1.05);
 }
 
 .articleDadosBrasil{
@@ -221,7 +223,7 @@ a{
 
 }
 .titDadosBrasil{
-    color: white;
+    color: rgba(255, 255, 255, 0.882);
     font-size: 40px;
     text-align: center;
     
@@ -259,14 +261,14 @@ a{
 }
 
 .titDadosBrasil{
-    color: white;
+    color: rgba(255, 255, 255, 0.856);
     font-size: 40px;
     padding-top: 5.7rem;
 
 
 }
 .txtDadosBrasil{
-    color: white;
+    color: rgba(255, 255, 255, 0.897);
     font-size: 17px;
     width: 200px;
     padding-left: 9rem;
@@ -305,15 +307,18 @@ a{
 
 }
 .titPQDOAR{
-    padding-top: 100px;
+    padding-top: 200px;
+    font-size: 55px;
 }
 /* Seção "Por que doar?" com fundo escuro e espaçamento inferior. */
 .sectionCards{
     display: flex;
+    width: 100%;
+    justify-content: center;
 }
 /* Contêiner que organiza os cartões lado a lado. */
 .card{
-    color: #ffffff;
+    color: #ffffffe7;
     border-radius: 20px;
     margin-top: 130px;
     margin-left: 15px;
@@ -347,7 +352,7 @@ a{
 }
 /* Seção "Onde doar?" com alinhamento centralizado e fundo escuro. */
 .divOndeDoar{
-    background-color: #000E17;
+    background-color: #000e17;
     text-align: center;
     width: 100%;
     height: auto;
@@ -356,14 +361,15 @@ a{
 .h1OndeDoar{
     color: #ffffff;
     padding-top: 200px;
-    font-size: 80px;
+    font-size: 60px;
 
 }
 /* Estilo do texto explicativo na seção "Onde doar?". */
 .txtOndeDoar{
     color: #00B3E3;
-    padding: 90px;
+    padding: 40px;
     font-size: 20px;
+    margin-bottom: 3rem;
 }
 
 .articleOqueDoar{
@@ -396,7 +402,6 @@ a{
 .sectionOqDoar{
     width: 100%;
     height: auto;
-    background: linear-gradient(#000E17);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -450,9 +455,9 @@ a{
 .divOndeDoarInfo{
     width: 300px;
     height: auto;
-    background: linear-gradient(#ffffff,#00B3E3);
     margin: 15px;
     border-radius: 20px;
+    border: 1px solid rgb(129, 206, 247);
 }
 .titinstrucoes{
     color: white;
@@ -463,9 +468,11 @@ a{
 .titledivInstrucoes{
     padding-top: 2rem;
     padding-bottom: 2rem;
+    color: white;
 }
 .txtInstrucoes{
     margin: 2rem;
+    color: rgba(255, 255, 255, 0.744);
 }
 .txtOptionOqDoar{
     color: #003e80;
@@ -646,8 +653,9 @@ a{
 }
 
 .h1compartilhamento{
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
+    margin-bottom: 1rem;
 }
 .imgresponsividade{
     width: 800px;
@@ -674,6 +682,7 @@ a{
     padding-left: 10rem;
     padding-right:10rem;
     padding-top: 2rem;
+    color: rgba(255, 255, 255, 0.653);
 }
 
 /* Estilo para a seção de integrantes */
@@ -690,7 +699,7 @@ a{
 .h2Integrantes{
     padding-top: 100px;
     color: #ffffff;
-    font-size: 40px;
+    font-size: 35px;
 }
 /* Contêiner para os artigos dos integrantes */
 .ArticleIntegrantes{
@@ -784,7 +793,7 @@ a{
     transition: 1s;
 }
 .NomeIntegrante:hover{
-    transform: scale(1.2);
+    transform: scale(1.02);
 }
 /* Estilo para o texto descritivo do integrante */
 .txtIntegrante{
@@ -1143,7 +1152,7 @@ a{
 }
 .bttn-saibamais-instituicao{
     width: 100px;
-    height: 50px;
+    height: 40px;
     border-radius: 20px;
     color: white;
     background-color: #003e80;
@@ -1151,10 +1160,10 @@ a{
     transition: 1s ease;
     border: none;
     margin-top: 50px;
-    margin-bottom: 10rem;
+    margin-bottom: 7rem;
 }
 .bttn-saibamais-instituicao:hover{
-    background-color: #00B3E3;
+    background-color: #27179a;
 }
 
 

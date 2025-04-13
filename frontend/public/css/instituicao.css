@@ -240,15 +240,22 @@ a{
 }
 
 @media (max-width:800px){
+    body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
     .article-instituicao{
         display: grid;
         height: auto;
         overflow-x: hidden;
+        width: 100%;
     }
     .div-info-instituicao{
-        width: 80%;
+        width: 100%;
         height: auto;
-
+        display: flex;
+        flex-direction: column;
     }
     .division{
         width: 100%;
