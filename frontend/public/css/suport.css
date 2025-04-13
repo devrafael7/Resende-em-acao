@@ -8,6 +8,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    overflow: hidden;
+}
 .menu{
     width: 100%;
     color: white;
@@ -91,37 +94,63 @@ a{
     padding-top: 2.5rem;
     align-items: center;
     justify-content: center;
+    background-color: rgb(255, 240, 240);
+    
+}
+.background-img-body{
+    animation: rotate 100s infinite;
+    position: absolute;
+    width: 70%;
+}
+.background-img-body-2{
+    animation: rotate 100s infinite;
+    position: absolute;
+    left: 0;
+    top: 0;
+    
+
+}
+@keyframes rotate{
+    from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
 }
 .sec-div-rigth{
     height: 100%;
     width: 50%;
     display: flex;
     flex-direction: column;
-   align-items: center;
-   justify-content: center;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
     
 
 }
 .sec-div-rigth img{ 
     width: 550px;
     height: auto;
-    animation: looping 5s infinite;
+    animation: looping 6s infinite;
+    z-index: 1;
 }
 @keyframes looping{
     0%{
-        transform: translateY(0px);
+        transform: translateY(-50px);
     }
     50%{
-        transform: translateY(-40px);
+        transform: translateY(0px);
     }
     100%{
-        transform: translateY(0px);
+        transform: translateY(-50px);
     }
 }
 
 .sec-div-left{
     height: 100%;
     width: 50%;
+    z-index: 1;
     
 
 
@@ -135,31 +164,36 @@ a{
     font-size: 45px;
     padding-left: 8%;
     margin: 4rem 1rem;
+    z-index: 1;
 }
 .sec-div-left h2{
     font-size: 25px;
     margin: 10px 0px;
     padding-left: 15%;
+    z-index: 1;
 }
 .div-campo-email{
     width: 100%;
     padding-left: 15%;
+    z-index: 1;
     
 }
 .div-campo-email input{
     margin: 1px;
     width: 300px;
     padding: 3px;
-    background-color: rgb(231, 252, 255);
+    background-color: rgb(255, 255, 255);
     border-radius:5px 10px;
+    z-index: 1;
 
 }
 .div-campo-email textarea{
    margin: 0.5px;
-   background-color: rgb(231, 252, 255);
+   background-color: rgb(255, 255, 255);
    border-radius:5px 10px;
    font-size: 15px;
    padding:3px;
+   z-index: 1;
   
 }
 .div-campo-email button{
@@ -169,10 +203,34 @@ a{
     padding: 15px;
     border-radius: 10px 20px;
     cursor: pointer;
-    transition:0.5 ease;
+    transition: 0.5 ease;
+    z-index: 1;
 
 }
 .div-campo-email button:hover{
     color: aliceblue;
     background-color: #003e80;
+}
+
+.div-sobra-iphone{
+    width: 35%;
+    height: 8%;
+    background-color: rgba(0, 0, 0, 0.389);
+    border-radius: 50%;
+    animation: sombra 6s infinite;
+    z-index: 0;
+    
+}
+
+@keyframes sombra {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+
 }
