@@ -69,6 +69,7 @@ a{
     border: none;
     font-size: 12px;
     transition: 0.5s ease;
+    cursor: pointer;
 }
 .buttonDoeAgoraHeader:hover{
     background-color: #00B3E3;
@@ -87,9 +88,25 @@ a{
     z-index: 1000;
     
 }
+.sec-intro-instituicao{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    padding-top: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+.sec-intro-instituicao img{
+    width: 250px;
+    height: 300px;
+}
+
+
+
+
 
 .article-instituicao{
-    background-image: url(/Resende-em-acao/frontend/public/images/circle_blue.png);
+    background-image: url(/frontend/public/images/circle_blue.png);
      background-size: cover;
     width: 100%;
     height: auto;
@@ -121,10 +138,7 @@ a{
     transition: 0.5s ease;
 
 }
-.div-img-instituicao img:hover{
-    transform: scale(1.1);
 
-}
 .div-iframe-google-instituicao iframe{
     width: 500px;
     height: 300px;
@@ -196,9 +210,9 @@ a{
 .btn-doarAgora-instituicao{
     border-style: none;
     background-color: #00B3E3;
-    padding: 15px;
+    padding: 10px;
     border-radius: 20px;
-    transition: 1s;
+    transition: 0.5s;
     font-size: 15px;
     cursor: pointer;
 }
@@ -216,7 +230,9 @@ a{
     background-color: rgba(0, 0, 0, 0);
     filter: invert(100%);
     border-style: none;
+    
 }
+
 .tit4{
     font-size: 30px;
     margin: 35px 10px;
