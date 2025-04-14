@@ -36,7 +36,7 @@ body{
     left: 0;
     bottom: -5%;
     width: 0;
-    height: 1px;
+    height: 1.7px;
     background-color: #007bff;
     transition: 0.3s ease;
 }
@@ -44,9 +44,10 @@ body{
     width: 100%;
 }
 /* aumenta o tamanho e troca a cor ao passar o cursor */
+
 .itemMenu:hover{
-    color: #007bff;
-    transform: scale(1.2);
+    color: #2287f4;
+    transform: scale(1.01);
 }
 
 /* Remove o estilo padrão dos links e define o cursor como clicável. */
@@ -54,26 +55,23 @@ a{
     all: unset;
     cursor: pointer;
 }
-
-
 .buttonDoeAgoraHeader{
     border-radius: 20px;
     position: absolute;
     right: 0;
     top: 0;
-    margin-top: 3px;
+    margin-top: 7px;
     margin-right: 25px;
     padding: 8px;
     background-color: #003e80;
     color: white;
     border: none;
-    font-size: 12px;
+    font-size: 15px;
     transition: 0.5s ease;
-    cursor: pointer;
 }
 .buttonDoeAgoraHeader:hover{
-    background-color: #00B3E3;
-    transform: scale(1.1);
+    background-color: #16219e;
+    transform: scale(1.03);
 
 }
 /* Cabeçalho fixo no topo da página com fundo transparente. */
@@ -82,11 +80,12 @@ a{
     width: 100%;
     justify-content: center;
     position: fixed;
-    height: 40px;
-    background-color: #00000023;
+    height: 50px;
+    background-color: #3330ff23;
     backdrop-filter: blur(5px);
     z-index: 1000;
     
+
 }
 .sec-intro-instituicao{
     width: 100%;
@@ -241,6 +240,144 @@ a{
     width: 100%;
     height: 2px;
     box-shadow: 1px 1px 10px 1px rgb(159, 159, 255);
+}
+
+.H2agradecimento{
+    color: rgb(86, 216, 255);
+    font-size: 20px;
+    padding-top: 5rem;
+    text-align: center;
+    margin: 1rem;
+
+}
+.logosobfooter{
+    width: 200px;
+    height: 250px;
+}
+.divBackagradecimento{
+    width: 20%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.AbaFooter{
+    padding-top: 2rem;
+    display: flex;
+    background: linear-gradient(#808080,#616161);
+    width: 100%;
+    height: auto;
+    color: rgba(255, 255, 255, 0.667);
+}
+
+
+.divfooterMenu{
+    border: 1px solid rgba(255, 255, 255, 0);
+    width: 300px;
+    padding-left: 40px;
+    
+}
+
+.h5Footer{
+    padding: 50px 50px 30px 50px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.h5Footer:hover{
+    color: white;
+}
+
+.footerUL{
+    list-style-type: none;
+    display: grid;
+    padding: 50px 50px 50px 50px;
+}
+
+.itemFooterMenu{
+    margin-top: 15px;
+    transition: 0.5s ease;
+    
+}
+.itemFooterMenu:hover{
+    color: #00B3E3;
+    transform: scale(1.1);
+}
+
+.divfooterContatosIntegrantes{
+    width: 300px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    
+
+}
+
+.footerULIntegrantes{
+    list-style-type: none;
+    display: grid;
+    padding: 30px 50px 50px 50px;
+
+}
+.itemFooterIntegrantes{
+    margin-top: 15px;
+    padding-top: 20px;
+    transition: 0.5s ease;
+
+}
+.itemFooterIntegrantes:hover{
+    color: #00B3E3;
+    transform: scale(1.1);
+}
+
+.divfooterMapaSite{
+    border: 1px solid rgba(255, 255, 255, 0);
+    width: 300px;
+    
+}
+.h5Mapasite{
+    padding: 50px 50px 50px 50px;
+    transition: 0.5s ease;
+
+}
+.h5Mapasite:hover{
+    color: white;
+    
+}
+
+.footerULMapaSite{
+    list-style-type: none;
+    display: grid;
+    padding: 30px 50px 50px 50px;
+
+}
+.itemFooterMapaSite{
+    margin-top: 15px;
+    transition: 0.5s ease;
+
+}
+
+.itemFooterMapaSite:hover{
+    color: #00B3E3;
+    transform: scale(1.1);
+}
+
+.divfooterDesfechoProjeto{
+    border: 1px solid rgba(255, 255, 255, 0);
+    width: 35%;
+}
+.h5DesfechoProjeto{
+    padding: 50px 50px 50px 50px;
+}
+.txtDesfecho{
+    padding-left: 50px;
+    padding-right: 30px;
+}
+.Fdireitosreservados{
+    background-color: #616161;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    padding-top: 12px;
+    color: white;
 }
 
 @keyframes suave-moviment {
