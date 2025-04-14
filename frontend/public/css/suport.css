@@ -89,18 +89,18 @@ a{
 }
 .sec-full{
     width: 100%;
-    height: 100vh;
+    height: auto;
     display: flex;
     padding-top: 2.5rem;
     align-items: center;
     justify-content: center;
-    background-color: rgb(255, 240, 240);
+    background-color: rgb(255, 255, 255);
     
 }
 .background-img-body{
     animation: rotate 100s infinite;
     position: absolute;
-    width: 70%;
+    width: 100%;
 }
 .background-img-body-2{
     animation: rotate 100s infinite;
@@ -232,5 +232,63 @@ a{
     100%{
         transform: scale(1);
     }
+
+}
+
+@media (max-width:790px){
+    body{
+        overflow: hidden;
+        max-width: 380px;
+        
+    }
+    .sec-full{
+        height: auto;
+        
+    }
+
+    .background-img-body{
+        width: 100%;
+        height: auto;
+       
+    }
+    .background-img-body-2{
+        display: none;
+        
+    }
+    .sec-div-rigth{
+        display: none;
+    }
+    .sec-div-left{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        padding-bottom: 3rem;
+    }
+    textarea{
+        max-width: 300px;
+    }
+    .sec-div-left h1{
+        font-size: 35px;
+        
+    }
+    .sec-div-left h2{
+        font-size: 20px;
+        
+    }
+    .div-sobra-iphone{
+        display: none;
+    }
+}
+@media (min-width:790px) and (max-width:1024px){
+
+    .sec-div-left h1{
+        font-size: 35px;
+        
+    }
+    .sec-div-left h2{
+        font-size: 20px;
+        
+    }
+
 
 }
