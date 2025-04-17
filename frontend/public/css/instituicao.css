@@ -55,6 +55,9 @@ a{
     all: unset;
     cursor: pointer;
 }
+a:hover{
+    color: red;
+}
 .buttonDoeAgoraHeader{
     border-radius: 20px;
     position: absolute;
