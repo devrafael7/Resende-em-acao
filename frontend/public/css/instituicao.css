@@ -108,7 +108,7 @@ a:hover{
 
 
 .article-instituicao{
-    background-image: url(/frontend/public/images/circle_blue.png);
+    background-image: url(../frontend/public/images/circle_blue.png);
      background-size: cover;
     width: 100%;
     height: auto;
@@ -395,7 +395,7 @@ a:hover{
     }
 }
 
-@media (max-width:800px){
+@media (max-width:900px){
     body {
         width: 100%;
         display: flex;

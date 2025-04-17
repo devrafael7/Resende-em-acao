@@ -1181,7 +1181,9 @@ a{
         all: unset;
         font-size: 0;
     }
-    
+    .divfrontimg .divbackimg img{
+        height: auto;
+    }
 
     .header1{
         margin-top: 0;
@@ -1373,8 +1375,8 @@ a{
         height: 300px;
         padding: 0;
         
-        margin-top: 0;
-        margin-bottom: 100px;
+        margin-top: 2rem;
+        margin-bottom: 7rem;
       
     }
     
@@ -1672,6 +1674,9 @@ a{
     .tit-saibamais{
         margin-top: 260px;
     }
+    .divBackagradecimento{
+        display: none;
+    }
     
         
 
@@ -1686,6 +1691,9 @@ a{
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    .buttonDoeAgoraHeader{
+        display: none;
     }
 
     .card{
@@ -1764,6 +1772,14 @@ a{
        
 
     }
+    .divBackagradecimento{
+        display: none;
+    }
+    .divfooterDesfechoProjeto{
+        width: 100%;
+
+    }
+    
     
     
 
