@@ -632,7 +632,38 @@ a{
 
 
 
+.sec-parceirias{
+    width: 100%;
+    height: 40vh;
+    background-color: #000E17;
+    color: white;
+}
+.div-parceirias h1{
+    margin-bottom: 2rem;
+    font-size: 40px;
+    text-align: center;
+    
+}
+.div-parceirias h3{
+    font-size: 20px;
+    text-align: center;
+}
+.div-parceirias button{
+    border-style: none;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 40px;
+    color: white;
+    background-color:#0056b3;
+}
 
+
+
+.email-parceiria{
+    background-image: url(/frontend/public/icons/icons8-gmail-logo-50.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 .divCompartilhamento{
     display: grid;
