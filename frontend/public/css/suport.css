@@ -10,7 +10,7 @@
 }
 body{
     overflow: hidden;
-    background-image: url(../frontend/public/images/bolhas.png);
+    background-image: url(/frontend/public/images/bolhas.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -96,7 +96,7 @@ a{
     padding-top: 2.5rem;
     align-items: center;
     justify-content: center;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255,0);
     
 }
 .background-img-body{
@@ -217,10 +217,10 @@ a{
 .div-sobra-iphone{
     width: 35%;
     height: 8%;
-    background-color: rgba(0, 0, 0, 0.389);
+    background-color: rgba(0, 0, 0, 0.4);
     border-radius: 50%;
     animation: sombra 6s infinite;
-    z-index: 0;
+    z-index: 10;
     
 }
 
