@@ -69,3 +69,53 @@ nextButton.addEventListener('click', () => {
 
 
 updateSlide();
+
+const stars = document.querySelectorAll('.star');
+  let selectedRating = 0;
+
+  stars.forEach(star => {
+    star.addEventListener('click', () => {
+      selectedRating = parseInt(star.dataset.value);
+      updateStars(selectedRating);
+    });
+  });
+
+  function updateStars(rating) {
+    stars.forEach(star => {
+      if (parseInt(star.dataset.value) <= rating) {
+        star.classList.add('selected');
+      } else {
+        star.classList.remove('selected');
+      }
+    });
+  }
+
+  function mover(elemento) {
+    elemento.classList.toggle('ativo');
+  }
+  
+  function enviarFeedback() {
+    const comentario = document.getElementById('feedback').value;
+
+    if (selectedRating === 0) {
+      alert('Por favor, selecione uma nota.');
+      return;
+    }
+
+    const avaliacao = {
+      estrelas: selectedRating,
+      comentario: comentario,
+      data: new Date().toISOString()
+    };
+
+    // Armazenar no localStorage
+    let avaliacoes = JSON.parse(localStorage.getItem('avaliacoes')) || [];
+    avaliacoes.push(avaliacao);
+    localStorage.setItem('avaliacoes', JSON.stringify(avaliacoes));
+
+    // Feedback ao usuário
+    document.getElementById('msg').innerText = 'Avaliação enviada com sucesso!';
+    document.getElementById('feedback').value = '';
+    updateStars(0);
+    selectedRating = 0;
+  }

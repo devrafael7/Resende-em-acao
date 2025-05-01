@@ -1205,7 +1205,92 @@ a{
     background-color: #27179a;
 }
 
+/* AVALIAÇÃO */
+.sec-avaliate{
+    background-color: #000E17;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7rem 0rem 2rem 0rem;
+}
+.box-avaliate {
+    background-color: #ffffff00;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    max-width: 1000px;
+    width: 100%;
+  }
 
+  .box-avaliate h3{
+    font-size: 30px;
+  }
+
+  .box-avaliate p{
+    padding: 5px 0px 30px 0px;
+  }
+
+  .stars {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  .stars model-viewer{
+    width: 80px;
+    height: 80px;
+  }
+
+  .star {
+    transition: 0.2s;
+    opacity: 0.8;
+    margin: 1rem 0rem;
+  }
+
+  .star:hover {
+    color: rgb(255, 208, 0);
+    opacity: 1;
+  }
+
+
+  textarea {
+    background-color: transparent;
+    color: white;
+    border: solid 1px white;
+    border-radius: 5px;
+    width: 100%;
+    height: 60px;
+    padding: 5px;
+    margin-top: 10px;
+    resize: none;
+  }
+
+  .btn-enviar{
+    margin-top: 10px;
+    padding: 10px;
+    width: 10%;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.5s ease;
+  }
+  
+
+  .success {
+    color: green;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .ativo {
+    transform: translateY(-20px);
+  }
 
 /* Ajustando responsividade para mobile*/
 @media  (max-width: 790px) {
@@ -1709,6 +1794,13 @@ a{
     }
     .divBackagradecimento{
         display: none;
+    }
+    
+    .btn-enviar{
+        width: 20%;
+    }
+    textarea{
+        width: 90%;
     }
     
         
