@@ -10,7 +10,7 @@
 }
 body{
     overflow: hidden;
-    background-image: url(/frontend/public/images/bolhas.png);
+    background-image: url(../frontend/public/images/bolhas.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
