@@ -108,7 +108,7 @@ a:hover{
 
 
 .article-instituicao{
-    background-image: url(../frontend/public/images/circle_blue.png);
+    background-image: url(../images/bolhas.png);
      background-size: cover;
     width: 100%;
     height: auto;

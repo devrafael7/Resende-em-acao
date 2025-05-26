@@ -522,7 +522,7 @@ a{
 .instituicoesSlides img{
         
         width: auto;
-        height: 700px;
+        height: 100%;
 
 }
 .manualNavigation{
@@ -1053,13 +1053,15 @@ a{
 
 .slide {
     display: none;
-    padding: 20px;
+    padding: 10px;
     transition: 1s ease;
+    height: auto;
+    width: 100%;
     
 }
 .slide-1{
     height: 100%;
-    background: rgba(0, 0, 0, 0.5) url(../images/Fachada-Santa-Casa-3-Carina-Rocha.jpg);
+    background: rgba(0, 0, 0, 0.7) url(../images/fototeste1.jpg);
     background-blend-mode: darken;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1069,7 +1071,7 @@ a{
 }
 .slide-2{
     height: 100%;
-    background: rgba(0, 0, 0, 0.5) url();
+    background: rgba(0, 0, 0, 0.7) url(../images/fototeste1.jpg);
     background-blend-mode: darken;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1079,7 +1081,7 @@ a{
 }
 .slide-3{
     height: 100%;
-    background: rgba(0, 0, 0, 0.5) url(../images/fototeste1.jpg);
+    background: rgba(0, 0, 0, 0.7) url(../images/fototeste1.jpg);
     background-blend-mode: darken;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1089,7 +1091,7 @@ a{
 }
 .slide-4{
     height: 100%;
-    background: rgba(0, 0, 0, 0.5) url(../images/fototeste1.jpg);
+    background: rgba(0, 0, 0, 0.7) url(../images/fototeste1.jpg);
     background-blend-mode: darken;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1100,7 +1102,7 @@ a{
 
 .slide-5{
     height: 100%;
-    background: rgba(0, 0, 0, 0.5) url(../images/fototeste1.jpg);
+    background: rgba(0, 0, 0, 0.7) url(../images/fototeste1.jpg);
     background-blend-mode: darken;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1115,9 +1117,9 @@ a{
 
 .TitSlide{
     width: 100%;
-    font-size: 40px;
+    font-size: 30px;
     padding-left: 7rem;
-    padding-top: 3rem;
+    padding-top: 1rem;
     z-index: 2;
     color: white;
     
@@ -1128,7 +1130,7 @@ a{
     font-size: 15px;
     padding-left: 7rem;
     padding-top: 1rem;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
     color: white;
     z-index: 2;
 }
@@ -1203,7 +1205,92 @@ a{
     background-color: #27179a;
 }
 
+/* AVALIAÇÃO */
+.sec-avaliate{
+    background-color: #000E17;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7rem 0rem 2rem 0rem;
+}
+.box-avaliate {
+    background-color: #ffffff00;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    max-width: 1000px;
+    width: 100%;
+  }
 
+  .box-avaliate h3{
+    font-size: 30px;
+  }
+
+  .box-avaliate p{
+    padding: 5px 0px 30px 0px;
+  }
+
+  .stars {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  .stars model-viewer{
+    width: 80px;
+    height: 80px;
+  }
+
+  .star {
+    transition: 0.2s;
+    opacity: 0.8;
+    margin: 1rem 0rem;
+  }
+
+  .star:hover {
+    color: rgb(255, 208, 0);
+    opacity: 1;
+  }
+
+
+  textarea {
+    background-color: transparent;
+    color: white;
+    border: solid 1px white;
+    border-radius: 5px;
+    width: 100%;
+    height: 60px;
+    padding: 5px;
+    margin-top: 10px;
+    resize: none;
+  }
+
+  .btn-enviar{
+    margin-top: 10px;
+    padding: 10px;
+    width: 10%;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.5s ease;
+  }
+  
+
+  .success {
+    color: green;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .ativo {
+    transform: translateY(-20px);
+  }
 
 /* Ajustando responsividade para mobile*/
 @media  (max-width: 790px) {
@@ -1644,7 +1731,7 @@ a{
        
     }
     .instituicoesSlides img{
-        width: 400px;
+        width: 100%;
         height: 100%;
             
           
@@ -1689,7 +1776,7 @@ a{
     
     
     .TitSlide{
-        font-size: 25px;
+        font-size: 20px;
         padding-bottom: 15px;
         padding-left: 0;
         margin: 0;
@@ -1707,6 +1794,13 @@ a{
     }
     .divBackagradecimento{
         display: none;
+    }
+    
+    .btn-enviar{
+        width: 20%;
+    }
+    textarea{
+        width: 90%;
     }
     
         
@@ -1794,7 +1888,7 @@ a{
     }
 
     .TitSlide{
-        font-size: 35px;
+        font-size: 25px;
         
 
     }
@@ -1809,6 +1903,9 @@ a{
     .divfooterDesfechoProjeto{
         width: 100%;
 
+    }
+    .slide{
+        height: auto;
     }
     
     
@@ -1845,7 +1942,7 @@ a{
        
     }
     .instituicoesSlides img{
-        width: 1406px;
+        width: 100%;
         height: 100%;
             
           
@@ -1854,6 +1951,9 @@ a{
     
     .divIntegrante:not(:last-child){
         margin-left: 50px;
+    }
+    .slide{
+        height: auto;
     }
     
     
