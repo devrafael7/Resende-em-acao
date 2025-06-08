@@ -7,6 +7,10 @@
     padding: 0;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 /* Div principal que define a imagem de fundo para a seção inicial. */
 .divfrontimg{
     background-image: url(../images/altosurubi1.jpg);
