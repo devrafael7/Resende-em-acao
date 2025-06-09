@@ -1310,7 +1310,7 @@ a{
 @media  (max-width: 790px) {
     
     html, body {
-        overflow: hidden;
+        overflow-x: hidden;
     }
 
     .buttonDoeAgoraHeader{
