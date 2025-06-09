@@ -342,6 +342,7 @@ a:hover{
 .divfooterContatosIntegrantes{
     width: 300px;
     border: 1px solid rgba(255, 255, 255, 0);
+    margin-top: 30rem;
     
 
 }
@@ -559,7 +560,10 @@ a:hover{
        
     
     }
-        
+    .title-oq-doar{
+        margin-top: 50px;
+
+    }
     
     .divfooterMapaSite{
         font-size: 12px;
@@ -567,6 +571,9 @@ a:hover{
         margin: 0;
         
         
+    }
+    .last-button{
+        margin-top: 3rem;
     }
     .h5Mapasite{
         font-size: 12px;
@@ -636,6 +643,7 @@ a:hover{
         height: auto;
         margin-bottom: 50vh;
     }
+    divfooterContatosIntegrantes
     .div-info-instituicao{
         display: flex;
         flex-direction: column;
