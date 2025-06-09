@@ -9,6 +9,8 @@
 
 body {
     overflow-x: hidden;
+    width: 100%;
+    height: auto;
 }
 
 /* Div principal que define a imagem de fundo para a seção inicial. */
@@ -222,7 +224,7 @@ a{
     width: 100%;
     height: auto;
     background:linear-gradient(black,black,#222222);
-    padding-bottom: 5rem;
+    padding-bottom: 12rem;
     
 
 }
@@ -237,10 +239,9 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 70px;
     flex-wrap: wrap;
     height: auto;
-
+    padding: 0rem 1rem;
 }
 .divDadosBrasil{ 
     width: 400px;
@@ -249,11 +250,13 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    margin-left: -80px;
+    margin-right: 80px;
     transition: 1s ease;
     margin-top: 5rem;
 
+
 }
+
 .Dados1{ filter: grayscale(25%);}
 .Dados2{ filter: grayscale(50%);}
 .Dados3{ filter: grayscale(75%);}
@@ -308,7 +311,6 @@ a{
     width: 100%;
     height: auto;
     background:linear-gradient(#222222,#003e80, #ffffff);
-
 }
 .titPQDOAR{
     padding-top: 200px;
@@ -319,16 +321,18 @@ a{
     display: flex;
     width: 100%;
     justify-content: center;
+    height: auto;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 /* Contêiner que organiza os cartões lado a lado. */
 .card{
     color: #ffffffe7;
     border-radius: 20px;
     margin-top: 130px;
-    margin-left: 15px;
-    margin-right: 15px;
     background-color: #212D34;
-    height: auto;
+    height: 600px;
     width: 320px;
     transition: 0.5s ease;
 }
@@ -378,6 +382,10 @@ a{
 
 .articleOqueDoar{
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .DivsubTitOqueDoar{
@@ -418,14 +426,14 @@ a{
     background-color: transparent;
     height: auto;
     width: 200px;
-    display: grid;
+    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    flex-direction: column;
     padding: 15px;
 }
 .imgOqueDoar{
-    padding-left: 65px;
     padding-bottom: 20px;
     padding-top: 10px;
     align-items: center;
@@ -644,7 +652,7 @@ a{
 }
 .div-parceirias h1{
     margin-bottom: 2rem;
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
     
 }
@@ -658,7 +666,7 @@ a{
     font-size: 20px;
     border-radius: 40px;
     color: white;
-    background-color:#0056b3;
+    background-color:transparent;
 }
 
 
@@ -1217,7 +1225,8 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 7rem 0rem 2rem 0rem;
+    flex-direction: column;
+    padding-top: 7rem;
 }
 .box-avaliate {
     background-color: #ffffff00;
@@ -1371,8 +1380,6 @@ a{
         color: white;
         border-radius: 20px;
         margin-top: 30px;
-        margin-left: 10px;
-        margin-right: 25px;
         background-color: #212D34;
         height: auto;
         width: 350px;
@@ -1830,9 +1837,8 @@ a{
         color: white;
         border-radius: 20px;
         margin-top: 50px;
-        margin-left: 30px;
         background-color: #212D34;
-        height: auto;
+        height: 650px;
         width: 600px;
     }
 
