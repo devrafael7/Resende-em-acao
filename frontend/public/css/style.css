@@ -1309,6 +1309,10 @@ a{
 /* Ajustando responsividade para mobile*/
 @media  (max-width: 790px) {
     
+    html, body {
+        overflow: hidden;
+    }
+
     .buttonDoeAgoraHeader{
         all: unset;
         font-size: 0;
@@ -1478,7 +1482,7 @@ a{
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        
+        width: 100%;
         
     }
     .buttonQueroAjudar{
