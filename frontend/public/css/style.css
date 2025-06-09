@@ -7,17 +7,12 @@
     padding: 0;
 }
 
-html, body {
+html {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
 
-body {
-    overflow-x: hidden;
-    width: 100%;
-    height: auto;
-}
 
 /* Div principal que define a imagem de fundo para a seção inicial. */
 .divfrontimg{
