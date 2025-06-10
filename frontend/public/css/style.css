@@ -780,7 +780,7 @@ a {
 }
 
 .imgresponsividade {
-    width: 800px;
+    width: 790px;
     height: 430px;
     background-image: url(../images/imgdesktopmobile\ .png);
     background-repeat: no-repeat;
@@ -801,8 +801,7 @@ a {
 }
 
 .txtCompartilhamento {
-    padding-left: 10rem;
-    padding-right: 10rem;
+    
     padding-top: 2rem;
     color: rgba(255, 255, 255, 0.653);
 }
@@ -1122,11 +1121,28 @@ a {
 
 .Fdireitosreservados {
     background-color: #212D34;
-    height: 40px;
+    height: auto;
     width: 100%;
     text-align: center;
     padding-top: 12px;
     color: white;
+    
+}
+.redes-sociais{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon-redes-sociais{
+    width: 40px;
+    height: auto;
+    
+}
+.div-face{
+margin: 10px;
+}
+.div-insta{
+    margin: 10px;
 }
 
 .divgifonda {
@@ -1432,6 +1448,11 @@ textarea {
 
 /* Ajustando responsividade para mobile*/
 @media (max-width: 790px) {
+    body{
+        overflow-wrap: break-word;
+        background-color: black;
+    }
+    
 
     .buttonDoeAgoraHeader {
         all: unset;
